@@ -1,10 +1,10 @@
-// Code smell: Long Parameter List. Too many separate parameters make calls hard to read
-// and error-prone. This could be replaced with a parameter object or builder.
+// Code smell: Long Parameter List [Lista de parámetros larga]. Demasiados parámetros separados hacen las llamadas difíciles de leer
+// y propensas a errores. Esto podría reemplazarse con un objeto de parámetros o un builder.
 
-// Exercise: Add two more options (e.g., locale and pageSize) to the report.
+// Ejercicio: Añade dos opciones más (p. ej., locale y pageSize) al reporte.
 
-// You'll have to thread more arguments through every call site, increasing the
-// chance of mistakes and making future changes harder.
+// Tendrás que encadenar más argumentos a través de cada punto de llamada, aumentando la
+// probabilidad de errores y dificultando cambios futuros.
 
 class ReportGenerator {
   generateReport(

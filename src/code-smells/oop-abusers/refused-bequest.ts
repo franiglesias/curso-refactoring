@@ -1,11 +1,11 @@
-// Code smell: Refused Bequest. Subclass inherits from a base type but overrides/ignores
-// parts of the contract, indicating a wrong hierarchy or missing abstraction.
+// Code smell: Refused Bequest [Herencia rechazada]. Una subclase hereda de un tipo base pero sobrescribe/ignora
+// partes del contrato, lo que indica una jerarquía equivocada o una abstracción faltante.
 
-// Exercise: Add a "pause" lifecycle method required by all controllers and make
-// start/stop mandatory.
+// Ejercicio: Añade un método de ciclo de vida "pause" requerido por todos los controladores y vuelve
+// obligatorios start/stop.
 
-// The ReadOnlyController will force awkward exceptions or
-// no-op implementations, showing the cost of an ill-suited inheritance.
+// ReadOnlyController forzará excepciones incómodas o implementaciones no-op,
+// mostrando el coste de una herencia mal planteada.
 
 class BaseController {
   start(): void {

@@ -1,11 +1,10 @@
-// Code smell: Data Clump. The same group of data fields travels together through many
-// places (name/street/city/zip), suggesting a missing Value Object and duplication.
+// Code smell: Data Clump [Grupo de datos]. El mismo grupo de campos de datos viaja junto por muchos
+// lugares (name/street/city/zip), lo que sugiere un Value Object faltante y duplicación.
 
+// Ejercicio: Añade estado/provincia y reglas de formateo internacional.
 
-// Exercise: Add state/province and international formatting rules.
-
-// You'll need to alter constructors, printers, and any place that passes these fields together,
-// multiplying the change surface.
+// Necesitarás modificar constructores, impresores y cualquier lugar que pase estos campos juntos,
+// multiplicando la superficie de cambio.
 
 class Invoice {
   constructor(

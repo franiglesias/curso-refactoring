@@ -1,10 +1,10 @@
-// Code smell: Shotgun Surgery. The same tax rule is duplicated across many classes;
-// changing it requires edits in multiple places.
+// Code smell: Shotgun Surgery [Cirugía de escopeta]. La misma regla de impuestos está duplicada en muchas clases;
+// cambiarla requiere ediciones en múltiples lugares.
 
-// Exercise: Change the tax from 21% to 18.5% with rounding to 2 decimals.
+// Ejercicio: Cambia el impuesto del 21% al 18.5% con redondeo a 2 decimales.
 
-// You'll have to hunt down each copy and ensure consistent rounding everywhere,
-// highlighting how duplication turns a small change into many risky edits.
+// Tendrás que buscar cada copia y asegurar un redondeo consistente en todas partes,
+// destacando cómo la duplicación convierte un cambio pequeño en muchas ediciones arriesgadas.
 
 export type LineItem = { name: string; price: number; qty: number }
 

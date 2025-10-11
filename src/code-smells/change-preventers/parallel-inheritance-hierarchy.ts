@@ -1,10 +1,10 @@
-// Code smell: Parallel Inheritance Hierarchy. Adding a new UI component forces adding
-// corresponding methods in every renderer, making both hierarchies grow in lockstep.
+// Code smell: Parallel Inheritance Hierarchy [Jerarquía de herencia paralela]. Agregar un nuevo componente de UI obliga a agregar
+// métodos correspondientes en cada renderer, haciendo que ambas jerarquías crezcan al unísono.
 
-// Exercise: Add an Image component.
+// Ejercicio: Añade un componente Image.
 
-// You'll need to add Image, add renderImage to Renderer,
-// and implement it across all renderers, showing lockstep changes.
+// Necesitarás añadir Image, añadir renderImage a Renderer,
+// e implementarlo en todos los renderers, mostrando cambios en paralelo.
 
 export abstract class Component {
   abstract draw(renderer: Renderer): string

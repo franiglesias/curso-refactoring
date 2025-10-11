@@ -1,10 +1,10 @@
-// Code smell: Dead Code. Unused declarations and unreachable statements add noise and
-// maintenance cost without contributing to behavior.
+// Code smell: Dead Code [Código muerto]. Las declaraciones no utilizadas y las sentencias inalcanzables añaden ruido
+// y coste de mantenimiento sin contribuir al comportamiento.
 
-// Exercise: Fix a bug in activeFunction (e.g., change the negative handling),
+// Ejercicio: Arregla un bug en activeFunction (p. ej., cambia el manejo de negativos),
 
-// See how the nearby dead code makes it harder to reason about what actually runs, inviting
-// mistakes or missed cleanups during your change.
+// Observa cómo el código muerto cercano dificulta razonar sobre lo que realmente se ejecuta,
+// invitando a errores u omisiones de limpieza durante tu cambio.
 const THE_ANSWER_TO_EVERYTHING = 42
 
 function formatCurrency(amount: number): string {
@@ -23,7 +23,7 @@ export function activeFunction(value: number): number {
   return value + 1
 }
 
-// Example usage calling the live function; the dead parts above still linger in the file
+// Ejemplo de uso llamando a la función activa; las partes muertas de arriba siguen en el archivo
 export function demoDeadCode(): string {
   const result = activeFunction(5)
   return formatCurrency(result)

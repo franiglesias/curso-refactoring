@@ -1,10 +1,10 @@
-// Code smell: Large Class. UserAccount accumulates many unrelated responsibilities
-// like auth, profile, notifications, and admin management, making it hard to change.
+// Code smell: Large Class [Clase grande]. UserAccount acumula muchas responsabilidades no relacionadas
+// como autenticación, perfil, notificaciones y gestión de administración, lo que dificulta el cambio.
 
-// Exercise: Add two-factor authentication (2FA) and notification preferences.
+// Ejercicio: Añade autenticación de dos factores (2FA) y preferencias de notificación.
 
-// You'll touch authentication, state, and notifications in one bloated class,
-// increasing the chance of breaking unrelated behavior.
+// Tocarás autenticación, estado y notificaciones en una clase inflada,
+// aumentando la probabilidad de romper comportamiento no relacionado.
 
 
 class UserAccount {

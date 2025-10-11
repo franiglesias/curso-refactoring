@@ -1,10 +1,10 @@
-// Code smell: Divergent Change. ProfileManager handles validation, persistence,
-// exporting, and emailing—multiple reasons to change concentrated in one class.
+// Code smell: Divergent Change [Cambio divergente]. ProfileManager maneja validación, persistencia,
+// exportación y envío de emails—múltiples razones para cambiar concentradas en una sola clase.
 
-// Exercise: Add a phone number with validation, include it in exports, and send an SMS.
+// Ejercicio: Añade un número de teléfono con validación, inclúyelo en las exportaciones y envía un SMS.
 
-// You'll touch validation, storage, exportAsJson/Csv, and messaging in one place,
-// demonstrating how one change forces edits across unrelated responsibilities.
+// Tocarás validación, almacenamiento, exportAsJson/Csv y mensajería en un solo lugar,
+// demostrando cómo un cambio fuerza ediciones en responsabilidades no relacionadas.
 
 export type User = { id: string; name: string; email: string }
 

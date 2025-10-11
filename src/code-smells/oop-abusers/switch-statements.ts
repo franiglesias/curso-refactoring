@@ -1,10 +1,10 @@
-// Code smell: Switch Statements. Behavior branches on type codes instead of using
-// polymorphism, leading to scattered conditional logic that grows with each variant.
+// Code smell: Switch Statements [Sentencias switch]. El comportamiento se ramifica en códigos de tipo en lugar de usar
+// polimorfismo, lo que genera lógica condicional dispersa que crece con cada variante.
 
-// Exercise: Add a new employee kind (contractor) with a special pay rule.
+// Ejercicio: Añade un nuevo tipo de empleado (contractor) con una regla de pago especial.
 
-// You'll have to modify the switch and any related code, repeating this change
-// in many places as new kinds accumulate.
+// Tendrás que modificar el switch y cualquier código relacionado, repitiendo este cambio
+// en muchos lugares a medida que se acumulen nuevos tipos.
 export type EmployeeKind = 'engineer' | 'manager' | 'sales'
 
 export interface EmployeeRecord {

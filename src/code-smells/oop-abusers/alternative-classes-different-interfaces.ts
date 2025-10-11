@@ -1,10 +1,11 @@
-// Code smell: Alternative Classes with Different Interfaces. Two classes are interchangeable
-// but expose different method names, forcing conditional client code and preventing polymorphism.
+// Code smell: Alternative Classes with Different Interfaces [Clases alternativas con interfaces diferentes].
+// Dos clases son intercambiables pero exponen nombres de métodos distintos, forzando código condicional
+// en los clientes e impidiendo el polimorfismo.
 
-// Exercise: Add timestamped logging to both implementations and allow swapping at runtime.
+// Ejercicio: Añade logging con marca de tiempo a ambas implementaciones y permite intercambiarlas en tiempo de ejecución.
 
-// You'll duplicate the feature across differently named methods and sprinkle conditionals
-// in clients, making simple changes tedious and error-prone.
+// Duplicarás la funcionalidad en métodos con nombres distintos y esparcirás condicionales
+// en los clientes, haciendo cambios simples tediosos y propensos a errores.
 
 export class TextLogger {
   log(message: string): void {

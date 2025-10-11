@@ -1,11 +1,11 @@
-// Code smell: Middleman. Shop does little more than delegate to Catalog, adding
-// an unnecessary layer that obscures the real collaborator.
+// Code smell: Middleman [Intermediario]. Shop hace poco más que delegar a Catalog, añadiendo
+// una capa innecesaria que oscurece al colaborador real.
 
-// Exercise: Add a searchByPrefix feature.
+// Ejercicio: Añade una funcionalidad searchByPrefix.
 
-// You'll add methods to Shop that only
-// pass through to Catalog, encouraging accidental duplication and hiding
-// where the real behavior lives when you need to change it later.
+// Añadirás métodos a Shop que solo
+// pasan a través hacia Catalog, fomentando duplicación accidental y ocultando
+// dónde vive el comportamiento real cuando necesites cambiarlo después.
 
 export class Catalog {
   private items = new Map<string, string>()

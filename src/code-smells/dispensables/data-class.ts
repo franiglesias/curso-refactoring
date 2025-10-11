@@ -1,12 +1,12 @@
 import {v4 as uuidv4} from 'uuid'
 
-// Code smell: Data Class. UserRecord exposes public data with little to no behavior,
-// pushing all logic into other classes and encouraging anemic domain models.
+// Code smell: Data Class [Clase de datos]. UserRecord expone datos públicos con poco o ningún comportamiento,
+// empujando toda la lógica a otras clases y fomentando modelos de dominio anémicos.
 
-// Exercise: Require email verification and domain rules (e.g., only company.com).
+// Ejercicio: Requiere verificación de email y reglas de dominio (p. ej., solo company.com).
 
-// You'll need to touch multiple services and places that manipulate UserRecord,
-// showing how behavior split from data makes simple changes spread widely.
+// Necesitarás tocar múltiples servicios y lugares que manipulan UserRecord,
+// mostrando cómo separar el comportamiento de los datos hace que cambios simples se dispersen ampliamente.
 
 export class UserRecord {
   constructor(

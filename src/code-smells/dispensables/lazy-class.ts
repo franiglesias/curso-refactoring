@@ -1,10 +1,10 @@
-// Code smell: Lazy Class. This class adds negligible behavior over a simple primitive
-// and does not justify its existence.
+// Code smell: Lazy Class [Clase perezosa]. Esta clase agrega un comportamiento insignificante
+// sobre un primitivo simple y no justifica su existencia.
 
-// Exercise: Add validation and formatting for ids (e.g., must be UUID, display short form).
+// Ejercicio: Añade validación y formateo para IDs (p. ej., debe ser UUID, mostrar forma corta).
 
-// You'll be tempted to keep sprinkling tiny methods here and across call sites, showing
-// how a lazy class invites scattered, low-value changes instead of cohesive behavior.
+// Te verás tentado a ir esparciendo pequeños métodos aquí y en los puntos de uso,
+// mostrando cómo una clase perezosa invita a cambios dispersos y de poco valor en lugar de un comportamiento cohesivo.
 
 export class IdWrapper {
   constructor(public id: string) {

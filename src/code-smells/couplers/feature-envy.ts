@@ -1,10 +1,10 @@
-// Code smell: Feature Envy. ShippingCalculator reaches into Customer's data to make
-// decisions, indicating the behavior may belong with Customer instead.
+// Code smell: Feature Envy [Envidia de características]. ShippingCalculator se mete en los datos de Customer para tomar
+// decisiones, lo que indica que el comportamiento quizá debería pertenecer a Customer.
 
-// Exercise: Add free shipping for customers in certain cities and a weekend surcharge.
+// Ejercicio: Añade envío gratis para clientes en ciertas ciudades y un recargo de fin de semana.
 
-// You'll likely keep adding conditions inside ShippingCalculator that depend on
-// Customer internals, spreading rules in the wrong place and making changes brittle.
+// Probablemente seguirás añadiendo condiciones dentro de ShippingCalculator que dependen de
+// detalles internos de Customer, esparciendo reglas en el lugar equivocado y volviendo frágiles los cambios.
 
 export class Customer {
   constructor(

@@ -1,10 +1,10 @@
-// This file demonstrates the "Duplicated Code" dispensable code smell.
-// Two functions below perform the same logic with only tiny differences in naming.
+// Este archivo demuestra el code smell "Duplicated Code [Código duplicado]".
+// Dos funciones abajo realizan la misma lógica con solo pequeñas diferencias en los nombres.
 
-// Exercise: Change the tax rule to be tiered (e.g., 10% up to $100 and 21% above).
+// Ejercicio: Cambia la regla de impuestos a escalonada (p. ej., 10% hasta $100 y 21% por encima).
 
-// You'll have to update multiple duplicated implementations and remember to keep
-// them consistent, showing how duplication multiplies the effort and risk.
+// Tendrás que actualizar múltiples implementaciones duplicadas y recordar mantenerlas
+// consistentes, mostrando cómo la duplicación multiplica el esfuerzo y el riesgo.
 
 export function calculateOrderTotalWithTax(
   items: { price: number; qty: number }[],
@@ -18,7 +18,7 @@ export function calculateOrderTotalWithTax(
   return subtotal + tax
 }
 
-// Duplicated version with minor naming differences but identical logic.
+// Versión duplicada con diferencias menores en nombres pero lógica idéntica.
 export function computeCartTotalIncludingTax(
   products: { price: number; quantity: number }[],
   taxRate: number,
@@ -31,7 +31,7 @@ export function computeCartTotalIncludingTax(
   return partial + tax
 }
 
-// Example usage that (unnecessarily) calls both duplicated implementations
+// Ejemplo de uso que (innecesariamente) llama a ambas implementaciones duplicadas
 export function demoDuplicatedCode(): [number, number] {
   const itemsA = [
     {price: 10, qty: 2},

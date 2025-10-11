@@ -1,10 +1,10 @@
-// Code smell: Primitive Obsession. Domain concepts (email, money, address) are modeled
-// with raw primitives, scattering validation/formatting rules across the codebase.
+// Code smell: Primitive Obsession [Obsesión por primitivos]. Conceptos de dominio (email, dinero, dirección) se modelan
+// con primitivos crudos, esparciendo reglas de validación/formateo por todo el código.
 
-// Exercise: Support multiple currencies and validate addresses by country.
+// Ejercicio: Soporta múltiples monedas y valida direcciones por país.
 
-// You'll end up threading strings and numbers with ad-hoc checks everywhere,
-// making a simple feature require widespread, inconsistent changes.
+// Terminarás encadenando strings y números con comprobaciones ad‑hoc por todas partes,
+// haciendo que una característica simple requiera cambios amplios e inconsistentes.
 
 class Order {
   constructor(

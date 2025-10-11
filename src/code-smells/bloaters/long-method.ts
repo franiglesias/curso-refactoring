@@ -1,3 +1,13 @@
+// Code smell: Long Method [Método largo]. El método process mezcla validación, cálculo, descuentos,
+// persistencia simulada, envío de emails e impresión en un solo bloque largo.
+// Esto dificulta leerlo, probarlo y cambiar una parte sin arriesgar las demás.
+//
+// Exercise: Añade soporte de cupones con expiración y multi‑moneda (USD/EUR) con
+// reglas de redondeo distintas.
+
+// Verás que tienes que tocar múltiples secciones dentro de este método largo
+// (validación, cálculo, descuentos, salida), aumentando el riesgo y el esfuerzo.
+
 class OrderService {
   process(order: Order) {
     // Validar el pedido
@@ -38,4 +48,19 @@ interface Order {
   customerEmail: string
   customerType: 'NORMAL' | 'VIP'
   items: { name: string; price: number; quantity: number }[]
+}
+
+// Ejemplo de uso que expone los problemas al usar esta clase tal cual:
+// cambiar el cálculo o la salida obliga a reejecutar todo el flujo monolítico.
+export function demoLongMethod(): void {
+  const service = new OrderService()
+  const order: Order = {
+    customerEmail: 'cliente@example.com',
+    customerType: 'VIP',
+    items: [
+      {name: 'Producto A', price: 10, quantity: 2},
+      {name: 'Producto B', price: 5, quantity: 1},
+    ],
+  }
+  service.process(order)
 }
