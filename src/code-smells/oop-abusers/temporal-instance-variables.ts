@@ -1,5 +1,11 @@
 // Code smell: Temporal Instance Variables. Fields are set only during a specific phase
 // of an object's lifecycle, increasing the chance of misuse between phases.
+
+// Exercise: Add an auto-save feature that can be called at any time.
+
+// You'll need to handle states where title/range/buffer may be half-initialized,
+// revealing how temporal coupling complicates seemingly simple changes.
+
 export class ReportBuilder {
   private title?: string | undefined
   private rangeStart?: Date | undefined

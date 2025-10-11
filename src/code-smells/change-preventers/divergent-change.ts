@@ -1,5 +1,11 @@
 // Code smell: Divergent Change. ProfileManager handles validation, persistence,
 // exporting, and emailing—multiple reasons to change concentrated in one class.
+
+// Exercise: Add a phone number with validation, include it in exports, and send an SMS.
+
+// You'll touch validation, storage, exportAsJson/Csv, and messaging in one place,
+// demonstrating how one change forces edits across unrelated responsibilities.
+
 export type User = { id: string; name: string; email: string }
 
 export class ProfileManager {
@@ -23,8 +29,11 @@ export class ProfileManager {
   }
 
   exportAsCsv(): string {
-    const rows = ["id,name,email", ...Array.from(this.store.values()).map(u => `${u.id},${u.name},${u.email}`)]
-    return rows.join("\n")
+    const rows = [
+      'id,name,email',
+      ...Array.from(this.store.values()).map((u) => `${u.id},${u.name},${u.email}`),
+    ]
+    return rows.join('\n')
   }
 
   sendWelcomeEmail(user: User): string {

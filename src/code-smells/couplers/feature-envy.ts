@@ -1,5 +1,11 @@
 // Code smell: Feature Envy. ShippingCalculator reaches into Customer's data to make
 // decisions, indicating the behavior may belong with Customer instead.
+
+// Exercise: Add free shipping for customers in certain cities and a weekend surcharge.
+
+// You'll likely keep adding conditions inside ShippingCalculator that depend on
+// Customer internals, spreading rules in the wrong place and making changes brittle.
+
 export class Customer {
   constructor(
     public name: string,

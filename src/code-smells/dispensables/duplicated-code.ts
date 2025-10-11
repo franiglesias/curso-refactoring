@@ -1,6 +1,11 @@
 // This file demonstrates the "Duplicated Code" dispensable code smell.
 // Two functions below perform the same logic with only tiny differences in naming.
 
+// Exercise: Change the tax rule to be tiered (e.g., 10% up to $100 and 21% above).
+
+// You'll have to update multiple duplicated implementations and remember to keep
+// them consistent, showing how duplication multiplies the effort and risk.
+
 export function calculateOrderTotalWithTax(
   items: { price: number; qty: number }[],
   taxRate: number,
@@ -36,8 +41,5 @@ export function demoDuplicatedCode(): [number, number] {
     {price: 10, quantity: 2},
     {price: 5, quantity: 3},
   ]
-  return [
-    calculateOrderTotalWithTax(itemsA, 0.21),
-    computeCartTotalIncludingTax(itemsB, 0.21),
-  ]
+  return [calculateOrderTotalWithTax(itemsA, 0.21), computeCartTotalIncludingTax(itemsB, 0.21)]
 }

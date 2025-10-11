@@ -1,5 +1,11 @@
 // Code smell: Message Chains. Deep navigation through object graphs couples clients
 // to the structure of intermediates and leads to brittle code.
+
+// Exercise: Insert a new Level between Root and Level1, or relocate getValue.
+
+// Observe how every client using root.getNext().getNext().getValue() must change,
+// revealing how message chains make simple refactors expensive.
+
 export class Level2 {
   constructor(private value: number) {
   }

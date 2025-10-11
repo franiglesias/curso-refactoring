@@ -1,5 +1,11 @@
 // Code smell: Inappropriate Intimacy. Team and Manager expose and modify each other's
 // internal state, creating tight coupling and fragile designs.
+
+// Exercise: Add an audit trail when budgets change and enforce minimum budget rules.
+
+// Because Team and Manager freely poke each other's fields, you'll have to sprinkle
+// checks and logging in multiple places, increasing coupling and regressions.
+
 export class Team {
   constructor(
     public name: string,

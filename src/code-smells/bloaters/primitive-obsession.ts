@@ -1,3 +1,11 @@
+// Code smell: Primitive Obsession. Domain concepts (email, money, address) are modeled
+// with raw primitives, scattering validation/formatting rules across the codebase.
+
+// Exercise: Support multiple currencies and validate addresses by country.
+
+// You'll end up threading strings and numbers with ad-hoc checks everywhere,
+// making a simple feature require widespread, inconsistent changes.
+
 class Order {
   constructor(
     private customerName: string,

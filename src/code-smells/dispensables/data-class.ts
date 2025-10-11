@@ -2,6 +2,12 @@ import {v4 as uuidv4} from 'uuid'
 
 // Code smell: Data Class. UserRecord exposes public data with little to no behavior,
 // pushing all logic into other classes and encouraging anemic domain models.
+
+// Exercise: Require email verification and domain rules (e.g., only company.com).
+
+// You'll need to touch multiple services and places that manipulate UserRecord,
+// showing how behavior split from data makes simple changes spread widely.
+
 export class UserRecord {
   constructor(
     public id: string,

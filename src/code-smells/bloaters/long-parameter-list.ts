@@ -1,5 +1,11 @@
 // Code smell: Long Parameter List. Too many separate parameters make calls hard to read
 // and error-prone. This could be replaced with a parameter object or builder.
+
+// Exercise: Add two more options (e.g., locale and pageSize) to the report.
+
+// You'll have to thread more arguments through every call site, increasing the
+// chance of mistakes and making future changes harder.
+
 class ReportGenerator {
   generateReport(
     title: string,

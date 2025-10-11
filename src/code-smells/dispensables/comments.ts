@@ -2,6 +2,11 @@
 // These comments are overly verbose and explain obvious code, adding noise
 // instead of value. The code itself is trivial and self-explanatory.
 
+// Exercise: Update this function to log when the sum is negative.
+
+// Notice how the surrounding comments quickly become outdated or misleading,
+// forcing you to edit many lines of commentary for a tiny code change and risking drift.
+
 // This function adds two numbers together and returns the result.
 // It takes parameter a which is a number and parameter b which is a number too.
 // Then it uses the plus operator to compute the sum of a and b.

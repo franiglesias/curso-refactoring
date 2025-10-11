@@ -1,5 +1,10 @@
 // Code smell: Dead Code. Unused declarations and unreachable statements add noise and
 // maintenance cost without contributing to behavior.
+
+// Exercise: Fix a bug in activeFunction (e.g., change the negative handling),
+
+// See how the nearby dead code makes it harder to reason about what actually runs, inviting
+// mistakes or missed cleanups during your change.
 const THE_ANSWER_TO_EVERYTHING = 42
 
 function formatCurrency(amount: number): string {

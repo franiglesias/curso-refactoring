@@ -1,5 +1,11 @@
 // Code smell: Shotgun Surgery. The same tax rule is duplicated across many classes;
 // changing it requires edits in multiple places.
+
+// Exercise: Change the tax from 21% to 18.5% with rounding to 2 decimals.
+
+// You'll have to hunt down each copy and ensure consistent rounding everywhere,
+// highlighting how duplication turns a small change into many risky edits.
+
 export type LineItem = { name: string; price: number; qty: number }
 
 export class PriceCalculator {

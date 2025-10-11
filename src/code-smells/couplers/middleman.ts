@@ -1,5 +1,12 @@
 // Code smell: Middleman. Shop does little more than delegate to Catalog, adding
 // an unnecessary layer that obscures the real collaborator.
+
+// Exercise: Add a searchByPrefix feature.
+
+// You'll add methods to Shop that only
+// pass through to Catalog, encouraging accidental duplication and hiding
+// where the real behavior lives when you need to change it later.
+
 export class Catalog {
   private items = new Map<string, string>()
 

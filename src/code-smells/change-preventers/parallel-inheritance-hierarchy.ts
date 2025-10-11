@@ -1,5 +1,11 @@
 // Code smell: Parallel Inheritance Hierarchy. Adding a new UI component forces adding
 // corresponding methods in every renderer, making both hierarchies grow in lockstep.
+
+// Exercise: Add an Image component.
+
+// You'll need to add Image, add renderImage to Renderer,
+// and implement it across all renderers, showing lockstep changes.
+
 export abstract class Component {
   abstract draw(renderer: Renderer): string
 }
@@ -53,5 +59,5 @@ export class MarkdownRenderer extends Renderer {
 export function demoParallelHierarchy(): string[] {
   const comps: Component[] = [new Button('Save'), new TextBox('name')]
   const renderer = new HtmlRenderer()
-  return comps.map(c => c.draw(renderer))
+  return comps.map((c) => c.draw(renderer))
 }

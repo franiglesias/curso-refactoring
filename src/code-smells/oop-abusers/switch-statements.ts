@@ -1,5 +1,10 @@
 // Code smell: Switch Statements. Behavior branches on type codes instead of using
 // polymorphism, leading to scattered conditional logic that grows with each variant.
+
+// Exercise: Add a new employee kind (contractor) with a special pay rule.
+
+// You'll have to modify the switch and any related code, repeating this change
+// in many places as new kinds accumulate.
 export type EmployeeKind = 'engineer' | 'manager' | 'sales'
 
 export interface EmployeeRecord {

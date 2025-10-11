@@ -1,3 +1,12 @@
+// Code smell: Large Class. UserAccount accumulates many unrelated responsibilities
+// like auth, profile, notifications, and admin management, making it hard to change.
+
+// Exercise: Add two-factor authentication (2FA) and notification preferences.
+
+// You'll touch authentication, state, and notifications in one bloated class,
+// increasing the chance of breaking unrelated behavior.
+
+
 class UserAccount {
   private name: string
   private email: string
