@@ -1,3 +1,5 @@
+// Code smell: Shotgun Surgery. The same tax rule is duplicated across many classes;
+// changing it requires edits in multiple places.
 export type LineItem = { name: string; price: number; qty: number }
 
 export class PriceCalculator {

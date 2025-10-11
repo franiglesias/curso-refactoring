@@ -1,3 +1,5 @@
+// Code smell: Long Parameter List. Too many separate parameters make calls hard to read
+// and error-prone. This could be replaced with a parameter object or builder.
 class ReportGenerator {
   generateReport(
     title: string,
@@ -15,4 +17,17 @@ class ReportGenerator {
     if (includeSummary) console.log('Incluyendo resumen...')
     console.log('Reporte generado exitosamente.')
   }
+}
+
+export function demoLongParameterList(): void {
+  const gen = new ReportGenerator()
+  gen.generateReport(
+    'Ventas Q1',
+    new Date('2025-01-01'),
+    new Date('2025-03-31'),
+    true,
+    false,
+    'Pat Smith',
+    'pat@example.com',
+  )
 }

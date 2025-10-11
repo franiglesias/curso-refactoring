@@ -1,3 +1,5 @@
+// Code smell: Message Chains. Deep navigation through object graphs couples clients
+// to the structure of intermediates and leads to brittle code.
 export class Level2 {
   constructor(private value: number) {
   }

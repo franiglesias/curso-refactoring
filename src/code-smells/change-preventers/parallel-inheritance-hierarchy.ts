@@ -1,3 +1,5 @@
+// Code smell: Parallel Inheritance Hierarchy. Adding a new UI component forces adding
+// corresponding methods in every renderer, making both hierarchies grow in lockstep.
 export abstract class Component {
   abstract draw(renderer: Renderer): string
 }

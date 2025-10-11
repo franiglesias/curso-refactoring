@@ -1,3 +1,5 @@
+// Code smell: Divergent Change. ProfileManager handles validation, persistence,
+// exporting, and emailing—multiple reasons to change concentrated in one class.
 export type User = { id: string; name: string; email: string }
 
 export class ProfileManager {

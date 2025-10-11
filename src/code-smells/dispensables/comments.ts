@@ -15,3 +15,8 @@ export function add(a: number, b: number): number {
 
 // Below there is another set of redundant comments that do not help at all.
 // Please avoid this pattern in real-world code.
+
+// Example usage of this smelly code: calling a trivial function that shouldn't need comments
+export function demoCommentsSmell(): number {
+  return add(2, 3)
+}

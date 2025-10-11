@@ -25,3 +25,19 @@ export function computeCartTotalIncludingTax(
   const tax = partial * taxRate
   return partial + tax
 }
+
+// Example usage that (unnecessarily) calls both duplicated implementations
+export function demoDuplicatedCode(): [number, number] {
+  const itemsA = [
+    {price: 10, qty: 2},
+    {price: 5, qty: 3},
+  ]
+  const itemsB = [
+    {price: 10, quantity: 2},
+    {price: 5, quantity: 3},
+  ]
+  return [
+    calculateOrderTotalWithTax(itemsA, 0.21),
+    computeCartTotalIncludingTax(itemsB, 0.21),
+  ]
+}

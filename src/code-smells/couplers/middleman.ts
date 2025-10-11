@@ -1,3 +1,5 @@
+// Code smell: Middleman. Shop does little more than delegate to Catalog, adding
+// an unnecessary layer that obscures the real collaborator.
 export class Catalog {
   private items = new Map<string, string>()
 

@@ -1,3 +1,5 @@
+// Code smell: Inappropriate Intimacy. Team and Manager expose and modify each other's
+// internal state, creating tight coupling and fragile designs.
 export class Team {
   constructor(
     public name: string,

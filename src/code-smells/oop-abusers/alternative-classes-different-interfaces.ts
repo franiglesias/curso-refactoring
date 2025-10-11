@@ -1,3 +1,5 @@
+// Code smell: Alternative Classes with Different Interfaces. Two classes are interchangeable
+// but expose different method names, forcing conditional client code and preventing polymorphism.
 export class TextLogger {
   log(message: string): void {
     console.log(`[text] ${message}`)

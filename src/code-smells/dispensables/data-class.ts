@@ -1,5 +1,7 @@
 import {v4 as uuidv4} from 'uuid'
 
+// Code smell: Data Class. UserRecord exposes public data with little to no behavior,
+// pushing all logic into other classes and encouraging anemic domain models.
 export class UserRecord {
   constructor(
     public id: string,
@@ -31,4 +33,13 @@ class UserReportGenerator {
   generateUserSummary(user: UserRecord): string {
     return `User ${user.name} (${user.email}) created on ${user.createdAt.toLocaleDateString()}`
   }
+}
+
+// Example usage orchestrating behavior in separate services rather than the data class itself
+export function demoDataClass(): string {
+  const service = new UserService()
+  const report = new UserReportGenerator()
+  const user = service.createUser('Lina', 'lina@example.com')
+  service.updateUserEmail(user, 'lina+news@example.com')
+  return report.generateUserSummary(user)
 }

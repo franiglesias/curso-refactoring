@@ -1,3 +1,5 @@
+// Code smell: Refused Bequest. Subclass inherits from a base type but overrides/ignores
+// parts of the contract, indicating a wrong hierarchy or missing abstraction.
 class BaseController {
   start(): void {
     console.log('starting')

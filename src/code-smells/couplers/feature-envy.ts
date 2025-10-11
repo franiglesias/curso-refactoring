@@ -1,3 +1,5 @@
+// Code smell: Feature Envy. ShippingCalculator reaches into Customer's data to make
+// decisions, indicating the behavior may belong with Customer instead.
 export class Customer {
   constructor(
     public name: string,
