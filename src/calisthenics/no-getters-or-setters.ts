@@ -1,28 +1,26 @@
 // Regla de calistenia: No getters ni setters
-// Este archivo VIOLA intencionalmente la regla exponiendo estado mediante getters/setters.
-// También incluye una propuesta de ejercicio para refactorizar hacia la regla.
 
 // EJEMPLO DE VIOLACIÓN: Modelo anémico con getters/setters y el comportamiento en otra parte
 export class BankAccount {
-  private _balance: number;
+  private _balance: number
 
   constructor(initialBalance: number = 0) {
-    this._balance = initialBalance;
+    this._balance = initialBalance
   }
 
   get balance(): number {
-    return this._balance;
+    return this._balance
   }
 
   set balance(value: number) {
-    if (value < 0) throw new Error('Negative');
-    this._balance = value;
+    if (value < 0) throw new Error('Negative')
+    this._balance = value
   }
 }
 
 // En otro lugar: los consumidores manipulan el estado directamente
 export function pay(account: BankAccount, amount: number) {
-  account.balance = account.balance - amount; // lógica externa usando getter/setter
+  account.balance = account.balance - amount // lógica externa usando getter/setter
 }
 
 /*

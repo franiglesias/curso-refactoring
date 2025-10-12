@@ -9,9 +9,9 @@
 // API legada (supón que viene de una librería de terceros que no podemos cambiar rápido):
 export function sendEmailLegacy(to: string, subject: string, body: string): void {
   // efecto secundario simulado (no-op aquí)
-  void to;
-  void subject;
-  void body;
+  void to
+  void subject
+  void body
 }
 
 // Uso actual disperso por el código (aquí simulamos dos puntos de llamada):

@@ -1,19 +1,18 @@
 // Regla de calistenia: Colecciones de primera clase
-// Este archivo VIOLA intencionalmente la regla dispersando la lógica de colecciones fuera de un tipo dedicado.
-// También incluye una propuesta de ejercicio para refactorizar hacia la regla.
 
 // EJEMPLO DE VIOLACIÓN: Se pasa un array crudo por todos lados con lógica de dominio en cualquier parte
-export type Product = { id: string; price: number };
+
+export type Product = { id: string; price: number }
 
 export function addProduct(products: Product[], product: Product): void {
   // Efectos secundarios sobre el array crudo
-  const exists = products.some(p => p.id === product.id);
-  if (!exists) products.push(product);
+  const exists = products.some((p) => p.id === product.id)
+  if (!exists) products.push(product)
 }
 
 export function totalPrice(products: Product[]): number {
   // Todo el mundo reimplementa reglas de negocio sobre arrays
-  return products.map(p => p.price).reduce((a, b) => a + b, 0);
+  return products.map((p) => p.price).reduce((a, b) => a + b, 0)
 }
 
 /*

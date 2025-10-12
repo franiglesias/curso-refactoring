@@ -5,35 +5,35 @@
 // EJEMPLO DE VIOLACIÓN: Objeto dios con muchas responsabilidades
 export class ReportService {
   // parseo, validación, formateo, E/S, cálculos y caché en una sola clase
-  private cache: Map<string, string> = new Map();
+  private cache: Map<string, string> = new Map()
 
   generateCsvReportFromJson(jsonInput: string, delimiter: string = ','): string {
     // parsear
-    let data: unknown;
+    let data: unknown
     try {
-      data = JSON.parse(jsonInput);
+      data = JSON.parse(jsonInput)
     } catch (e) {
-      throw new Error('Invalid JSON');
+      throw new Error('Invalid JSON')
     }
 
     // validar
     if (!Array.isArray(data)) {
-      throw new Error('Expected array');
+      throw new Error('Expected array')
     }
 
     // calcular y formatear
-    const headers = Object.keys(data[0] as any);
-    const lines = [headers.join(delimiter)];
+    const headers = Object.keys(data[0] as any)
+    const lines = [headers.join(delimiter)]
     for (const row of data as Array<Record<string, any>>) {
-      const values = headers.map(h => String(row[h] ?? ''));
-      lines.push(values.join(delimiter));
+      const values = headers.map((h) => String(row[h] ?? ''))
+      lines.push(values.join(delimiter))
     }
-    const result = lines.join('\n');
+    const result = lines.join('\n')
 
     // responsabilidad de caché y E/S
-    this.cache.set('last', result);
+    this.cache.set('last', result)
     // simular escritura a disco/red
-    return result;
+    return result
   }
 }
 

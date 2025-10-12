@@ -46,17 +46,17 @@ export class ReceiptPrinter {
     // Regla con aleatoriedad (no determinista): "descuento de la suerte" con probabilidad 10%
     // y porcentaje aleatorio hasta 5%.
     let luckyDiscountPct = 0
-    if (Math.random() < 0.10) {
+    if (Math.random() < 0.1) {
       luckyDiscountPct = Math.random() * 0.05
     }
     const luckyDiscount = round(subtotal * luckyDiscountPct)
 
     // Impuesto ingenuo: 7% general, libros exentos, comida 3%
     const taxableGeneral = order.items
-      .filter(i => i.category !== 'books')
+      .filter((i) => i.category !== 'books')
       .reduce((s, i) => s + (i.category === 'food' ? 0 : i.unitPrice * i.quantity), 0)
     const foodTax = order.items
-      .filter(i => i.category === 'food')
+      .filter((i) => i.category === 'food')
       .reduce((s, i) => s + i.unitPrice * i.quantity * 0.03, 0)
     const generalTax = taxableGeneral * 0.07
     const taxes = round(generalTax + foodTax)
@@ -66,7 +66,9 @@ export class ReceiptPrinter {
     // Pie con resumen. Observa el orden y los formatos: parte de la superficie del Golden Master.
     const summary = [
       `Subtotal: $${subtotal.toFixed(2)}`,
-      luckyDiscount > 0 ? `Descuento de la suerte: -$${luckyDiscount.toFixed(2)} (${(luckyDiscountPct * 100).toFixed(2)}%)` : `Descuento de la suerte: $0.00 (0.00%)`,
+      luckyDiscount > 0
+        ? `Descuento de la suerte: -$${luckyDiscount.toFixed(2)} (${(luckyDiscountPct * 100).toFixed(2)}%)`
+        : `Descuento de la suerte: $0.00 (0.00%)`,
       `Impuestos: $${taxes.toFixed(2)}`,
       `TOTAL: $${total.toFixed(2)}`,
     ]
@@ -74,7 +76,6 @@ export class ReceiptPrinter {
     return [header, ...lines, '---', ...summary].join('\n')
   }
 }
-
 
 function round(n: number): number {
   return Math.round(n * 100) / 100
@@ -91,7 +92,12 @@ const products: Omit<OrderItem, 'quantity'>[] = [
 const customers = ['Ana', 'Luis', 'Mar', 'Iván', 'Sofía']
 
 // Utilidad para generar pedidos
-export function generateOrder(id: string, customerName: string, numItems: number, quantity: number): Order {
+export function generateOrder(
+  id: string,
+  customerName: string,
+  numItems: number,
+  quantity: number,
+): Order {
   const items: OrderItem[] = []
   for (let i = 0; i < numItems; i++) {
     const p = products[i]
@@ -107,7 +113,7 @@ export function generatesRandomOrder(id: string): Order {
   const numItems = 2 + Math.floor(Math.random() * 3) // 2..4 ítems
   const items: OrderItem[] = []
   for (let i = 0; i < numItems; i++) {
-    const p = products[Math.floor(Math.random() * products.length)]
+    const p = products[Math.floor(Math.random() * products.length)]!
     items.push({...p, quantity: 1 + Math.floor(Math.random() * 4)}) // 1..4 qty
   }
 
@@ -120,44 +126,21 @@ export function demoGoldenMaster(): string {
     id: 'ORD-1',
     customerName: 'Cliente Demo',
     items: [
-      {sku: 'BK-001', description: 'Libro: Refactoring', unitPrice: 28.0, quantity: 1, category: 'books'},
-      {sku: 'GN-777', description: 'Cuaderno A5', unitPrice: 5.25, quantity: 3, category: 'general'},
+      {
+        sku: 'BK-001',
+        description: 'Libro: Refactoring',
+        unitPrice: 28.0,
+        quantity: 1,
+        category: 'books',
+      },
+      {
+        sku: 'GN-777',
+        description: 'Cuaderno A5',
+        unitPrice: 5.25,
+        quantity: 3,
+        category: 'general',
+      },
     ],
   }
   return new ReceiptPrinter().print(pedido)
 }
-
-/*
-Ejercicio: Crear una prueba de Golden Master para el código legado (printReceipt)
-Objetivo: Caracterizar el comportamiento actual y establecer una red de seguridad para refactorizar.
-
-Pasos recomendados (haz commits entre pasos):
-1) Identificar fuentes de no-determinismo que rompen el Golden Master:
-   - Fecha/Hora: Date.now / toLocale*.
-   - Aleatoriedad: Math.random en printReceipt y en generarPedidoAleatorio.
-2) Introducir costuras (SEAMS) mínimas SIN cambiar el comportamiento:
-   - Crea versiones inyectables de reloj y RNG. Por ejemplo, define tipos:
-       type Reloj = { ahoraMs(): number }
-       type Azar = { next(): number } // retorna [0,1)
-   - Crea funciones o sobrecargas que acepten dependencias (p.ej., printReceiptConDeps(order, reloj, azar)).
-   - Por compatibilidad, mantén printReceipt delegando a la versión con deps usando Date.now/Math.random reales.
-3) Generar un conjunto amplio y estable de entradas:
-   - Fija semillas para el RNG (puedes implementar un PRNG simple como mulberry32) y fechas deterministas.
-   - Genera N pedidos (p.ej., 100) con generarPedidoAleatorio pero usando el RNG inyectado.
-4) Capturar la salida MAESTRA:
-   - Ejecuta printReceipt sobre cada pedido y concatena todas las salidas con separadores claros.
-   - Guarda el resultado como snapshot (Vitest/Jest) o en un archivo en /test/_golden/receipt.master.txt.
-5) Escribir la prueba:
-   - Si usas snapshots, expect(texto).toMatchSnapshot().
-   - Si usas archivo, compara contra el contenido del master: cualquier diferencia debe hacer fallar el test.
-6) Refactorizar con seguridad:
-   - Limpia el formato, extrae funciones, separa cálculo (dominio) de presentación (string), etc.
-   - Usa la prueba Golden Master para garantizar que el output no cambia (salvo decisiones explícitas).
-7) Evolucionar el Golden Master cuando se desee un cambio funcional intencional:
-   - Primero cambia el test (actualiza el snapshot/archivo) con revisión consciente; luego el código.
-
-Criterios de aceptación:
-- La prueba de Golden Master captura múltiples casos de entrada y falla ante cambios en la salida.
-- Las fuentes de no-determinismo están controladas mediante inyección o fijación de semillas/fecha.
-- printReceipt original sigue disponible para el resto del código (compatibilidad), delegando en la versión con deps.
-*/

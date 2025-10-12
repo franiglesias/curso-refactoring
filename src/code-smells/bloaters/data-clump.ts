@@ -1,7 +1,8 @@
-// Code smell: Data Clump [Grupo de datos]. El mismo grupo de campos de datos viaja junto por muchos
-// lugares (name/street/city/zip), lo que sugiere un Value Object faltante y duplicación.
+// Code smell: Data Clump [Grupo de datos].
+// El mismo grupo de campos de datos viaja junto por muchos lugares,
+// lo que sugiere un Value Object faltante y duplicación.
 
-// Ejercicio: Añade estado/provincia y reglas de formateo internacional.
+// Ejercicio: Añade país/provincia y reglas de formateo internacional.
 
 // Necesitarás modificar constructores, impresores y cualquier lugar que pase estos campos juntos,
 // multiplicando la superficie de cambio.

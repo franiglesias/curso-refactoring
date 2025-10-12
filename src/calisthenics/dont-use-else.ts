@@ -1,24 +1,23 @@
 // Regla de calistenia: No usar else
-// Este archivo VIOLA intencionalmente la regla utilizando ramas else.
-// También incluye una propuesta de ejercicio para refactorizar hacia la regla.
 
 // EJEMPLO DE VIOLACIÓN: Usa ramas else en lugar de cláusulas de guarda / polimorfismo
+
 export function shippingCost(weightKg: number, destination: 'DOMESTIC' | 'INTERNATIONAL'): number {
   if (destination === 'DOMESTIC') {
     if (weightKg <= 1) {
-      return 5;
+      return 5
     } else if (weightKg <= 5) {
-      return 10;
+      return 10
     } else {
-      return 20;
+      return 20
     }
   } else {
     if (weightKg <= 1) {
-      return 15;
+      return 15
     } else if (weightKg <= 5) {
-      return 25;
+      return 25
     } else {
-      return 40;
+      return 40
     }
   }
 }

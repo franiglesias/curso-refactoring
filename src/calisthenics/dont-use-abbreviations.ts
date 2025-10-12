@@ -1,23 +1,21 @@
 // Regla de calistenia: No usar abreviaturas
-// Este archivo VIOLA intencionalmente la regla utilizando nombres poco claros/crípticos.
-// También incluye una propuesta de ejercicio para refactorizar hacia la regla.
 
 // EJEMPLO DE VIOLACIÓN: Identificadores abreviados que oscurecen la intención
 export class Cfg {
-  usr: string;
-  pwd: string;
-  srv: string;
-  env: 'dev' | 'prod';
+  usr: string
+  pwd: string
+  srv: string
+  env: 'dev' | 'prod'
 
   constructor(u: string, p: string, s: string, e: 'dev' | 'prod') {
-    this.usr = u;
-    this.pwd = p;
-    this.srv = s;
-    this.env = e;
+    this.usr = u
+    this.pwd = p
+    this.srv = s
+    this.env = e
   }
 
   connStr(): string {
-    return `${this.usr}:${this.pwd}@${this.srv}/${this.env}`;
+    return `${this.usr}:${this.pwd}@${this.srv}/${this.env}`
   }
 }
 

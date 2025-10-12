@@ -1,17 +1,20 @@
 // Regla de calistenia: No usar primitivos (obsesión por primitivos)
-// Este archivo VIOLA intencionalmente la regla usando tipos primitivos para conceptos de dominio.
-// También incluye una propuesta de ejercicio para refactorizar hacia la regla.
 
 // EJEMPLO DE VIOLACIÓN: Usar strings/numbers para conceptos de dominio fuertes
-export function transfer(amount: number, fromIban: string, toIban: string, currency: string): string {
+export function transfer(
+  amount: number,
+  fromIban: string,
+  toIban: string,
+  currency: string,
+): string {
   if (!fromIban || !toIban || !currency) {
-    throw new Error('Missing data');
+    throw new Error('Missing data')
   }
   if (amount <= 0) {
-    throw new Error('Invalid amount');
+    throw new Error('Invalid amount')
   }
   // simular una transferencia
-  return `${amount} ${currency} from ${fromIban} to ${toIban}`;
+  return `${amount} ${currency} from ${fromIban} to ${toIban}`
 }
 
 /*

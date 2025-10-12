@@ -1,15 +1,16 @@
 // Regla de calistenia: Solo un punto por línea
-// Este archivo VIOLA intencionalmente la regla usando cadenas encadenadas (fluent) tipo "tren".
-// También incluye una propuesta de ejercicio para refactorizar hacia la regla.
 
 // EJEMPLO DE VIOLACIÓN: Envidia de funciones y cadenas largas
-export function lastCityInUpper(people: Array<{ address?: { city?: string } }>): string | undefined {
+export function lastCityInUpper(
+  people: Array<{ address?: { city?: string } }>,
+): string | undefined {
   // ¡5 puntos en una sola línea!
-  return people.filter(p => p.address && p.address.city)
-    .map(p => p.address!.city!)
-    .filter(c => c!.length > 0)
+  return people
+    .filter((p) => p.address && p.address.city)
+    .map((p) => p.address!.city!)
+    .filter((c) => c!.length > 0)
     .pop()!
-    .toUpperCase();
+    .toUpperCase()
 }
 
 /*

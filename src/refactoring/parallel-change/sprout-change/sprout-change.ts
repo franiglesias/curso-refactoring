@@ -8,7 +8,12 @@
 // de forma incremental.
 //
 // Implementación ingenua actual (intencionalmente rígida):
-export type CartItem = { id: string; price: number; qty: number; category?: 'general' | 'books' | 'food' }
+export type CartItem = {
+  id: string
+  price: number
+  qty: number
+  category?: 'general' | 'books' | 'food'
+}
 export type Region = 'US' | 'EU'
 
 // Regla existente: un único impuesto plano por región; los libros y la comida están exentos en la UE
@@ -22,9 +27,9 @@ export function calculateTotal(cart: CartItem[], region: Region): number {
   } else if (region === 'EU') {
     // exenciones ingenuas en línea
     const taxable = cart
-      .filter(it => it.category !== 'books' && it.category !== 'food')
+      .filter((it) => it.category !== 'books' && it.category !== 'food')
       .reduce((s, it) => s + it.price * it.qty, 0)
-    tax = taxable * 0.20 // 20% plano solo sobre los ítems gravables
+    tax = taxable * 0.2 // 20% plano solo sobre los ítems gravables
   }
 
   return roundCurrency(subtotal + tax)
