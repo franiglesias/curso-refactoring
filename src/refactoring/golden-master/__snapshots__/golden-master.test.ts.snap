@@ -1,0 +1,2505 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Receipt Printer > should generate a golden master 1`] = `
+"Recibo ORD-1 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+---
+Subtotal: $30.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $30.00
+==================
+Recibo ORD-2 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+---
+Subtotal: $90.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $90.00
+==================
+Recibo ORD-3 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+---
+Subtotal: $300.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $300.00
+==================
+Recibo ORD-4 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+---
+Subtotal: $750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $750.00
+==================
+Recibo ORD-5 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+---
+Subtotal: $9000.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $9000.00
+==================
+Recibo ORD-6 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+---
+Subtotal: $42.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.38
+TOTAL: $42.88
+==================
+Recibo ORD-7 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+---
+Subtotal: $127.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.13
+TOTAL: $128.63
+==================
+Recibo ORD-8 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+---
+Subtotal: $425.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.75
+TOTAL: $428.75
+==================
+Recibo ORD-9 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+---
+Subtotal: $1062.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $9.38
+TOTAL: $1071.88
+==================
+Recibo ORD-10 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+---
+Subtotal: $12750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $112.50
+TOTAL: $12862.50
+==================
+Recibo ORD-11 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+---
+Subtotal: $47.70
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.74
+TOTAL: $48.44
+==================
+Recibo ORD-12 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+---
+Subtotal: $143.10
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $2.22
+TOTAL: $145.32
+==================
+Recibo ORD-13 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+---
+Subtotal: $477.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $7.39
+TOTAL: $484.39
+==================
+Recibo ORD-14 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+---
+Subtotal: $1192.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $18.48
+TOTAL: $1210.98
+==================
+Recibo ORD-15 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+---
+Subtotal: $14310.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $221.70
+TOTAL: $14531.70
+==================
+Recibo ORD-16 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+---
+Subtotal: $51.60
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.01
+TOTAL: $52.61
+==================
+Recibo ORD-17 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+---
+Subtotal: $154.80
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.04
+TOTAL: $157.84
+==================
+Recibo ORD-18 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+---
+Subtotal: $516.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $10.12
+TOTAL: $526.12
+==================
+Recibo ORD-19 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+---
+Subtotal: $1290.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $25.30
+TOTAL: $1315.30
+==================
+Recibo ORD-20 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+---
+Subtotal: $15480.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $303.60
+TOTAL: $15783.60
+==================
+Recibo ORD-21 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+5. Té verde 200g (FD-222) x1 = $6.75
+---
+Subtotal: $58.35
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.21
+TOTAL: $59.56
+==================
+Recibo ORD-22 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+5. Té verde 200g (FD-222) x3 = $20.25
+---
+Subtotal: $175.05
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.64
+TOTAL: $178.69
+==================
+Recibo ORD-23 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+5. Té verde 200g (FD-222) x10 = $67.50
+---
+Subtotal: $583.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $12.15
+TOTAL: $595.65
+==================
+Recibo ORD-24 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+5. Té verde 200g (FD-222) x25 = $168.75
+---
+Subtotal: $1458.75
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $30.36
+TOTAL: $1489.11
+==================
+Recibo ORD-25 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+5. Té verde 200g (FD-222) x300 = $2025.00
+---
+Subtotal: $17505.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $364.35
+TOTAL: $17869.35
+==================
+Recibo ORD-26 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+---
+Subtotal: $30.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $30.00
+==================
+Recibo ORD-27 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+---
+Subtotal: $90.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $90.00
+==================
+Recibo ORD-28 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+---
+Subtotal: $300.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $300.00
+==================
+Recibo ORD-29 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+---
+Subtotal: $750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $750.00
+==================
+Recibo ORD-30 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+---
+Subtotal: $9000.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $9000.00
+==================
+Recibo ORD-31 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+---
+Subtotal: $42.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.38
+TOTAL: $42.88
+==================
+Recibo ORD-32 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+---
+Subtotal: $127.50
+Descuento de la suerte: -$4.59 (3.60%)
+Impuestos: $1.13
+TOTAL: $124.04
+==================
+Recibo ORD-33 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+---
+Subtotal: $425.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.75
+TOTAL: $428.75
+==================
+Recibo ORD-34 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+---
+Subtotal: $1062.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $9.38
+TOTAL: $1071.88
+==================
+Recibo ORD-35 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+---
+Subtotal: $12750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $112.50
+TOTAL: $12862.50
+==================
+Recibo ORD-36 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+---
+Subtotal: $47.70
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.74
+TOTAL: $48.44
+==================
+Recibo ORD-37 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+---
+Subtotal: $143.10
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $2.22
+TOTAL: $145.32
+==================
+Recibo ORD-38 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+---
+Subtotal: $477.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $7.39
+TOTAL: $484.39
+==================
+Recibo ORD-39 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+---
+Subtotal: $1192.50
+Descuento de la suerte: -$42.71 (3.58%)
+Impuestos: $18.48
+TOTAL: $1168.27
+==================
+Recibo ORD-40 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+---
+Subtotal: $14310.00
+Descuento de la suerte: -$519.56 (3.63%)
+Impuestos: $221.70
+TOTAL: $14012.14
+==================
+Recibo ORD-41 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+---
+Subtotal: $51.60
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.01
+TOTAL: $52.61
+==================
+Recibo ORD-42 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+---
+Subtotal: $154.80
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.04
+TOTAL: $157.84
+==================
+Recibo ORD-43 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+---
+Subtotal: $516.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $10.12
+TOTAL: $526.12
+==================
+Recibo ORD-44 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+---
+Subtotal: $1290.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $25.30
+TOTAL: $1315.30
+==================
+Recibo ORD-45 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+---
+Subtotal: $15480.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $303.60
+TOTAL: $15783.60
+==================
+Recibo ORD-46 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+5. Té verde 200g (FD-222) x1 = $6.75
+---
+Subtotal: $58.35
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.21
+TOTAL: $59.56
+==================
+Recibo ORD-47 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+5. Té verde 200g (FD-222) x3 = $20.25
+---
+Subtotal: $175.05
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.64
+TOTAL: $178.69
+==================
+Recibo ORD-48 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+5. Té verde 200g (FD-222) x10 = $67.50
+---
+Subtotal: $583.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $12.15
+TOTAL: $595.65
+==================
+Recibo ORD-49 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+5. Té verde 200g (FD-222) x25 = $168.75
+---
+Subtotal: $1458.75
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $30.36
+TOTAL: $1489.11
+==================
+Recibo ORD-50 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+5. Té verde 200g (FD-222) x300 = $2025.00
+---
+Subtotal: $17505.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $364.35
+TOTAL: $17869.35
+==================
+Recibo ORD-51 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+---
+Subtotal: $30.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $30.00
+==================
+Recibo ORD-52 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+---
+Subtotal: $90.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $90.00
+==================
+Recibo ORD-53 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+---
+Subtotal: $300.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $300.00
+==================
+Recibo ORD-54 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+---
+Subtotal: $750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $750.00
+==================
+Recibo ORD-55 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+---
+Subtotal: $9000.00
+Descuento de la suerte: -$281.50 (3.13%)
+Impuestos: $0.00
+TOTAL: $8718.50
+==================
+Recibo ORD-56 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+---
+Subtotal: $42.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.38
+TOTAL: $42.88
+==================
+Recibo ORD-57 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+---
+Subtotal: $127.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.13
+TOTAL: $128.63
+==================
+Recibo ORD-58 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+---
+Subtotal: $425.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.75
+TOTAL: $428.75
+==================
+Recibo ORD-59 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+---
+Subtotal: $1062.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $9.38
+TOTAL: $1071.88
+==================
+Recibo ORD-60 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+---
+Subtotal: $12750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $112.50
+TOTAL: $12862.50
+==================
+Recibo ORD-61 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+---
+Subtotal: $47.70
+Descuento de la suerte: -$1.07 (2.24%)
+Impuestos: $0.74
+TOTAL: $47.37
+==================
+Recibo ORD-62 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+---
+Subtotal: $143.10
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $2.22
+TOTAL: $145.32
+==================
+Recibo ORD-63 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+---
+Subtotal: $477.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $7.39
+TOTAL: $484.39
+==================
+Recibo ORD-64 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+---
+Subtotal: $1192.50
+Descuento de la suerte: -$4.55 (0.38%)
+Impuestos: $18.48
+TOTAL: $1206.43
+==================
+Recibo ORD-65 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+---
+Subtotal: $14310.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $221.70
+TOTAL: $14531.70
+==================
+Recibo ORD-66 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+---
+Subtotal: $51.60
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.01
+TOTAL: $52.61
+==================
+Recibo ORD-67 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+---
+Subtotal: $154.80
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.04
+TOTAL: $157.84
+==================
+Recibo ORD-68 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+---
+Subtotal: $516.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $10.12
+TOTAL: $526.12
+==================
+Recibo ORD-69 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+---
+Subtotal: $1290.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $25.30
+TOTAL: $1315.30
+==================
+Recibo ORD-70 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+---
+Subtotal: $15480.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $303.60
+TOTAL: $15783.60
+==================
+Recibo ORD-71 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+5. Té verde 200g (FD-222) x1 = $6.75
+---
+Subtotal: $58.35
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.21
+TOTAL: $59.56
+==================
+Recibo ORD-72 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+5. Té verde 200g (FD-222) x3 = $20.25
+---
+Subtotal: $175.05
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.64
+TOTAL: $178.69
+==================
+Recibo ORD-73 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+5. Té verde 200g (FD-222) x10 = $67.50
+---
+Subtotal: $583.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $12.15
+TOTAL: $595.65
+==================
+Recibo ORD-74 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+5. Té verde 200g (FD-222) x25 = $168.75
+---
+Subtotal: $1458.75
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $30.36
+TOTAL: $1489.11
+==================
+Recibo ORD-75 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+5. Té verde 200g (FD-222) x300 = $2025.00
+---
+Subtotal: $17505.00
+Descuento de la suerte: -$539.99 (3.08%)
+Impuestos: $364.35
+TOTAL: $17329.36
+==================
+Recibo ORD-76 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+---
+Subtotal: $30.00
+Descuento de la suerte: -$0.36 (1.21%)
+Impuestos: $0.00
+TOTAL: $29.64
+==================
+Recibo ORD-77 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+---
+Subtotal: $90.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $90.00
+==================
+Recibo ORD-78 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+---
+Subtotal: $300.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $300.00
+==================
+Recibo ORD-79 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+---
+Subtotal: $750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $750.00
+==================
+Recibo ORD-80 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+---
+Subtotal: $9000.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $9000.00
+==================
+Recibo ORD-81 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+---
+Subtotal: $42.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.38
+TOTAL: $42.88
+==================
+Recibo ORD-82 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+---
+Subtotal: $127.50
+Descuento de la suerte: -$0.92 (0.73%)
+Impuestos: $1.13
+TOTAL: $127.71
+==================
+Recibo ORD-83 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+---
+Subtotal: $425.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.75
+TOTAL: $428.75
+==================
+Recibo ORD-84 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+---
+Subtotal: $1062.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $9.38
+TOTAL: $1071.88
+==================
+Recibo ORD-85 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+---
+Subtotal: $12750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $112.50
+TOTAL: $12862.50
+==================
+Recibo ORD-86 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+---
+Subtotal: $47.70
+Descuento de la suerte: -$1.84 (3.85%)
+Impuestos: $0.74
+TOTAL: $46.60
+==================
+Recibo ORD-87 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+---
+Subtotal: $143.10
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $2.22
+TOTAL: $145.32
+==================
+Recibo ORD-88 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+---
+Subtotal: $477.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $7.39
+TOTAL: $484.39
+==================
+Recibo ORD-89 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+---
+Subtotal: $1192.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $18.48
+TOTAL: $1210.98
+==================
+Recibo ORD-90 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+---
+Subtotal: $14310.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $221.70
+TOTAL: $14531.70
+==================
+Recibo ORD-91 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+---
+Subtotal: $51.60
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.01
+TOTAL: $52.61
+==================
+Recibo ORD-92 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+---
+Subtotal: $154.80
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.04
+TOTAL: $157.84
+==================
+Recibo ORD-93 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+---
+Subtotal: $516.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $10.12
+TOTAL: $526.12
+==================
+Recibo ORD-94 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+---
+Subtotal: $1290.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $25.30
+TOTAL: $1315.30
+==================
+Recibo ORD-95 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+---
+Subtotal: $15480.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $303.60
+TOTAL: $15783.60
+==================
+Recibo ORD-96 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+5. Té verde 200g (FD-222) x1 = $6.75
+---
+Subtotal: $58.35
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.21
+TOTAL: $59.56
+==================
+Recibo ORD-97 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+5. Té verde 200g (FD-222) x3 = $20.25
+---
+Subtotal: $175.05
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.64
+TOTAL: $178.69
+==================
+Recibo ORD-98 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+5. Té verde 200g (FD-222) x10 = $67.50
+---
+Subtotal: $583.50
+Descuento de la suerte: -$2.81 (0.48%)
+Impuestos: $12.15
+TOTAL: $592.84
+==================
+Recibo ORD-99 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+5. Té verde 200g (FD-222) x25 = $168.75
+---
+Subtotal: $1458.75
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $30.36
+TOTAL: $1489.11
+==================
+Recibo ORD-100 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+5. Té verde 200g (FD-222) x300 = $2025.00
+---
+Subtotal: $17505.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $364.35
+TOTAL: $17869.35
+==================
+Recibo ORD-101 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+---
+Subtotal: $30.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $30.00
+==================
+Recibo ORD-102 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+---
+Subtotal: $90.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $90.00
+==================
+Recibo ORD-103 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+---
+Subtotal: $300.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $300.00
+==================
+Recibo ORD-104 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+---
+Subtotal: $750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $750.00
+==================
+Recibo ORD-105 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+---
+Subtotal: $9000.00
+Descuento de la suerte: -$166.26 (1.85%)
+Impuestos: $0.00
+TOTAL: $8833.74
+==================
+Recibo ORD-106 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+---
+Subtotal: $42.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.38
+TOTAL: $42.88
+==================
+Recibo ORD-107 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+---
+Subtotal: $127.50
+Descuento de la suerte: -$3.49 (2.74%)
+Impuestos: $1.13
+TOTAL: $125.14
+==================
+Recibo ORD-108 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+---
+Subtotal: $425.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.75
+TOTAL: $428.75
+==================
+Recibo ORD-109 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+---
+Subtotal: $1062.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $9.38
+TOTAL: $1071.88
+==================
+Recibo ORD-110 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+---
+Subtotal: $12750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $112.50
+TOTAL: $12862.50
+==================
+Recibo ORD-111 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+---
+Subtotal: $47.70
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.74
+TOTAL: $48.44
+==================
+Recibo ORD-112 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+---
+Subtotal: $143.10
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $2.22
+TOTAL: $145.32
+==================
+Recibo ORD-113 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+---
+Subtotal: $477.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $7.39
+TOTAL: $484.39
+==================
+Recibo ORD-114 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+---
+Subtotal: $1192.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $18.48
+TOTAL: $1210.98
+==================
+Recibo ORD-115 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+---
+Subtotal: $14310.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $221.70
+TOTAL: $14531.70
+==================
+Recibo ORD-116 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+---
+Subtotal: $51.60
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.01
+TOTAL: $52.61
+==================
+Recibo ORD-117 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+---
+Subtotal: $154.80
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.04
+TOTAL: $157.84
+==================
+Recibo ORD-118 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+---
+Subtotal: $516.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $10.12
+TOTAL: $526.12
+==================
+Recibo ORD-119 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+---
+Subtotal: $1290.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $25.30
+TOTAL: $1315.30
+==================
+Recibo ORD-120 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+---
+Subtotal: $15480.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $303.60
+TOTAL: $15783.60
+==================
+Recibo ORD-121 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+5. Té verde 200g (FD-222) x1 = $6.75
+---
+Subtotal: $58.35
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.21
+TOTAL: $59.56
+==================
+Recibo ORD-122 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+5. Té verde 200g (FD-222) x3 = $20.25
+---
+Subtotal: $175.05
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.64
+TOTAL: $178.69
+==================
+Recibo ORD-123 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+5. Té verde 200g (FD-222) x10 = $67.50
+---
+Subtotal: $583.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $12.15
+TOTAL: $595.65
+==================
+Recibo ORD-124 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+5. Té verde 200g (FD-222) x25 = $168.75
+---
+Subtotal: $1458.75
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $30.36
+TOTAL: $1489.11
+==================
+Recibo ORD-125 - 10/12/2025 6:18:58 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+5. Té verde 200g (FD-222) x300 = $2025.00
+---
+Subtotal: $17505.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $364.35
+TOTAL: $17869.35"
+`;
+
+exports[`refactoring > should generate a golden master 1`] = `
+"Recibo ORD-1 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+---
+Subtotal: $30.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $30.00
+==================
+Recibo ORD-2 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+---
+Subtotal: $90.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $90.00
+==================
+Recibo ORD-3 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+---
+Subtotal: $300.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $300.00
+==================
+Recibo ORD-4 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+---
+Subtotal: $750.00
+Descuento de la suerte: -$26.51 (3.53%)
+Impuestos: $0.00
+TOTAL: $723.49
+==================
+Recibo ORD-5 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+---
+Subtotal: $9000.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $9000.00
+==================
+Recibo ORD-6 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+---
+Subtotal: $42.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.38
+TOTAL: $42.88
+==================
+Recibo ORD-7 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+---
+Subtotal: $127.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.13
+TOTAL: $128.63
+==================
+Recibo ORD-8 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+---
+Subtotal: $425.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.75
+TOTAL: $428.75
+==================
+Recibo ORD-9 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+---
+Subtotal: $1062.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $9.38
+TOTAL: $1071.88
+==================
+Recibo ORD-10 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+---
+Subtotal: $12750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $112.50
+TOTAL: $12862.50
+==================
+Recibo ORD-11 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+---
+Subtotal: $47.70
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.74
+TOTAL: $48.44
+==================
+Recibo ORD-12 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+---
+Subtotal: $143.10
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $2.22
+TOTAL: $145.32
+==================
+Recibo ORD-13 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+---
+Subtotal: $477.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $7.39
+TOTAL: $484.39
+==================
+Recibo ORD-14 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+---
+Subtotal: $1192.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $18.48
+TOTAL: $1210.98
+==================
+Recibo ORD-15 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+---
+Subtotal: $14310.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $221.70
+TOTAL: $14531.70
+==================
+Recibo ORD-16 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+---
+Subtotal: $51.60
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.01
+TOTAL: $52.61
+==================
+Recibo ORD-17 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+---
+Subtotal: $154.80
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.04
+TOTAL: $157.84
+==================
+Recibo ORD-18 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+---
+Subtotal: $516.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $10.12
+TOTAL: $526.12
+==================
+Recibo ORD-19 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+---
+Subtotal: $1290.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $25.30
+TOTAL: $1315.30
+==================
+Recibo ORD-20 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+---
+Subtotal: $15480.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $303.60
+TOTAL: $15783.60
+==================
+Recibo ORD-21 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+5. Té verde 200g (FD-222) x1 = $6.75
+---
+Subtotal: $58.35
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.21
+TOTAL: $59.56
+==================
+Recibo ORD-22 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+5. Té verde 200g (FD-222) x3 = $20.25
+---
+Subtotal: $175.05
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.64
+TOTAL: $178.69
+==================
+Recibo ORD-23 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+5. Té verde 200g (FD-222) x10 = $67.50
+---
+Subtotal: $583.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $12.15
+TOTAL: $595.65
+==================
+Recibo ORD-24 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+5. Té verde 200g (FD-222) x25 = $168.75
+---
+Subtotal: $1458.75
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $30.36
+TOTAL: $1489.11
+==================
+Recibo ORD-25 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+5. Té verde 200g (FD-222) x300 = $2025.00
+---
+Subtotal: $17505.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $364.35
+TOTAL: $17869.35
+==================
+Recibo ORD-26 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+---
+Subtotal: $30.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $30.00
+==================
+Recibo ORD-27 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+---
+Subtotal: $90.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $90.00
+==================
+Recibo ORD-28 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+---
+Subtotal: $300.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $300.00
+==================
+Recibo ORD-29 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+---
+Subtotal: $750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $750.00
+==================
+Recibo ORD-30 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+---
+Subtotal: $9000.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $9000.00
+==================
+Recibo ORD-31 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+---
+Subtotal: $42.50
+Descuento de la suerte: -$0.20 (0.48%)
+Impuestos: $0.38
+TOTAL: $42.68
+==================
+Recibo ORD-32 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+---
+Subtotal: $127.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.13
+TOTAL: $128.63
+==================
+Recibo ORD-33 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+---
+Subtotal: $425.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.75
+TOTAL: $428.75
+==================
+Recibo ORD-34 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+---
+Subtotal: $1062.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $9.38
+TOTAL: $1071.88
+==================
+Recibo ORD-35 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+---
+Subtotal: $12750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $112.50
+TOTAL: $12862.50
+==================
+Recibo ORD-36 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+---
+Subtotal: $47.70
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.74
+TOTAL: $48.44
+==================
+Recibo ORD-37 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+---
+Subtotal: $143.10
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $2.22
+TOTAL: $145.32
+==================
+Recibo ORD-38 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+---
+Subtotal: $477.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $7.39
+TOTAL: $484.39
+==================
+Recibo ORD-39 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+---
+Subtotal: $1192.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $18.48
+TOTAL: $1210.98
+==================
+Recibo ORD-40 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+---
+Subtotal: $14310.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $221.70
+TOTAL: $14531.70
+==================
+Recibo ORD-41 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+---
+Subtotal: $51.60
+Descuento de la suerte: -$1.86 (3.60%)
+Impuestos: $1.01
+TOTAL: $50.75
+==================
+Recibo ORD-42 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+---
+Subtotal: $154.80
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.04
+TOTAL: $157.84
+==================
+Recibo ORD-43 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+---
+Subtotal: $516.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $10.12
+TOTAL: $526.12
+==================
+Recibo ORD-44 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+---
+Subtotal: $1290.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $25.30
+TOTAL: $1315.30
+==================
+Recibo ORD-45 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+---
+Subtotal: $15480.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $303.60
+TOTAL: $15783.60
+==================
+Recibo ORD-46 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+5. Té verde 200g (FD-222) x1 = $6.75
+---
+Subtotal: $58.35
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.21
+TOTAL: $59.56
+==================
+Recibo ORD-47 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+5. Té verde 200g (FD-222) x3 = $20.25
+---
+Subtotal: $175.05
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.64
+TOTAL: $178.69
+==================
+Recibo ORD-48 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+5. Té verde 200g (FD-222) x10 = $67.50
+---
+Subtotal: $583.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $12.15
+TOTAL: $595.65
+==================
+Recibo ORD-49 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+5. Té verde 200g (FD-222) x25 = $168.75
+---
+Subtotal: $1458.75
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $30.36
+TOTAL: $1489.11
+==================
+Recibo ORD-50 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+5. Té verde 200g (FD-222) x300 = $2025.00
+---
+Subtotal: $17505.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $364.35
+TOTAL: $17869.35
+==================
+Recibo ORD-51 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+---
+Subtotal: $30.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $30.00
+==================
+Recibo ORD-52 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+---
+Subtotal: $90.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $90.00
+==================
+Recibo ORD-53 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+---
+Subtotal: $300.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $300.00
+==================
+Recibo ORD-54 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+---
+Subtotal: $750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $750.00
+==================
+Recibo ORD-55 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+---
+Subtotal: $9000.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $9000.00
+==================
+Recibo ORD-56 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+---
+Subtotal: $42.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.38
+TOTAL: $42.88
+==================
+Recibo ORD-57 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+---
+Subtotal: $127.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.13
+TOTAL: $128.63
+==================
+Recibo ORD-58 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+---
+Subtotal: $425.00
+Descuento de la suerte: -$6.15 (1.45%)
+Impuestos: $3.75
+TOTAL: $422.60
+==================
+Recibo ORD-59 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+---
+Subtotal: $1062.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $9.38
+TOTAL: $1071.88
+==================
+Recibo ORD-60 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+---
+Subtotal: $12750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $112.50
+TOTAL: $12862.50
+==================
+Recibo ORD-61 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+---
+Subtotal: $47.70
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.74
+TOTAL: $48.44
+==================
+Recibo ORD-62 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+---
+Subtotal: $143.10
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $2.22
+TOTAL: $145.32
+==================
+Recibo ORD-63 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+---
+Subtotal: $477.00
+Descuento de la suerte: -$17.11 (3.59%)
+Impuestos: $7.39
+TOTAL: $467.28
+==================
+Recibo ORD-64 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+---
+Subtotal: $1192.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $18.48
+TOTAL: $1210.98
+==================
+Recibo ORD-65 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+---
+Subtotal: $14310.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $221.70
+TOTAL: $14531.70
+==================
+Recibo ORD-66 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+---
+Subtotal: $51.60
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.01
+TOTAL: $52.61
+==================
+Recibo ORD-67 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+---
+Subtotal: $154.80
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.04
+TOTAL: $157.84
+==================
+Recibo ORD-68 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+---
+Subtotal: $516.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $10.12
+TOTAL: $526.12
+==================
+Recibo ORD-69 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+---
+Subtotal: $1290.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $25.30
+TOTAL: $1315.30
+==================
+Recibo ORD-70 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+---
+Subtotal: $15480.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $303.60
+TOTAL: $15783.60
+==================
+Recibo ORD-71 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+5. Té verde 200g (FD-222) x1 = $6.75
+---
+Subtotal: $58.35
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.21
+TOTAL: $59.56
+==================
+Recibo ORD-72 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+5. Té verde 200g (FD-222) x3 = $20.25
+---
+Subtotal: $175.05
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.64
+TOTAL: $178.69
+==================
+Recibo ORD-73 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+5. Té verde 200g (FD-222) x10 = $67.50
+---
+Subtotal: $583.50
+Descuento de la suerte: -$17.53 (3.01%)
+Impuestos: $12.15
+TOTAL: $578.12
+==================
+Recibo ORD-74 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+5. Té verde 200g (FD-222) x25 = $168.75
+---
+Subtotal: $1458.75
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $30.36
+TOTAL: $1489.11
+==================
+Recibo ORD-75 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+5. Té verde 200g (FD-222) x300 = $2025.00
+---
+Subtotal: $17505.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $364.35
+TOTAL: $17869.35
+==================
+Recibo ORD-76 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+---
+Subtotal: $30.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $30.00
+==================
+Recibo ORD-77 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+---
+Subtotal: $90.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $90.00
+==================
+Recibo ORD-78 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+---
+Subtotal: $300.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $300.00
+==================
+Recibo ORD-79 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+---
+Subtotal: $750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $750.00
+==================
+Recibo ORD-80 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+---
+Subtotal: $9000.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $9000.00
+==================
+Recibo ORD-81 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+---
+Subtotal: $42.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.38
+TOTAL: $42.88
+==================
+Recibo ORD-82 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+---
+Subtotal: $127.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.13
+TOTAL: $128.63
+==================
+Recibo ORD-83 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+---
+Subtotal: $425.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.75
+TOTAL: $428.75
+==================
+Recibo ORD-84 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+---
+Subtotal: $1062.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $9.38
+TOTAL: $1071.88
+==================
+Recibo ORD-85 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+---
+Subtotal: $12750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $112.50
+TOTAL: $12862.50
+==================
+Recibo ORD-86 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+---
+Subtotal: $47.70
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.74
+TOTAL: $48.44
+==================
+Recibo ORD-87 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+---
+Subtotal: $143.10
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $2.22
+TOTAL: $145.32
+==================
+Recibo ORD-88 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+---
+Subtotal: $477.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $7.39
+TOTAL: $484.39
+==================
+Recibo ORD-89 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+---
+Subtotal: $1192.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $18.48
+TOTAL: $1210.98
+==================
+Recibo ORD-90 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+---
+Subtotal: $14310.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $221.70
+TOTAL: $14531.70
+==================
+Recibo ORD-91 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+---
+Subtotal: $51.60
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.01
+TOTAL: $52.61
+==================
+Recibo ORD-92 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+---
+Subtotal: $154.80
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.04
+TOTAL: $157.84
+==================
+Recibo ORD-93 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+---
+Subtotal: $516.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $10.12
+TOTAL: $526.12
+==================
+Recibo ORD-94 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+---
+Subtotal: $1290.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $25.30
+TOTAL: $1315.30
+==================
+Recibo ORD-95 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+---
+Subtotal: $15480.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $303.60
+TOTAL: $15783.60
+==================
+Recibo ORD-96 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+5. Té verde 200g (FD-222) x1 = $6.75
+---
+Subtotal: $58.35
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.21
+TOTAL: $59.56
+==================
+Recibo ORD-97 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+5. Té verde 200g (FD-222) x3 = $20.25
+---
+Subtotal: $175.05
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.64
+TOTAL: $178.69
+==================
+Recibo ORD-98 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+5. Té verde 200g (FD-222) x10 = $67.50
+---
+Subtotal: $583.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $12.15
+TOTAL: $595.65
+==================
+Recibo ORD-99 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+5. Té verde 200g (FD-222) x25 = $168.75
+---
+Subtotal: $1458.75
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $30.36
+TOTAL: $1489.11
+==================
+Recibo ORD-100 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+5. Té verde 200g (FD-222) x300 = $2025.00
+---
+Subtotal: $17505.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $364.35
+TOTAL: $17869.35
+==================
+Recibo ORD-101 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+---
+Subtotal: $30.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $30.00
+==================
+Recibo ORD-102 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+---
+Subtotal: $90.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $90.00
+==================
+Recibo ORD-103 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+---
+Subtotal: $300.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $300.00
+==================
+Recibo ORD-104 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+---
+Subtotal: $750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $750.00
+==================
+Recibo ORD-105 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+---
+Subtotal: $9000.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.00
+TOTAL: $9000.00
+==================
+Recibo ORD-106 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+---
+Subtotal: $42.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.38
+TOTAL: $42.88
+==================
+Recibo ORD-107 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+---
+Subtotal: $127.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.13
+TOTAL: $128.63
+==================
+Recibo ORD-108 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+---
+Subtotal: $425.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.75
+TOTAL: $428.75
+==================
+Recibo ORD-109 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+---
+Subtotal: $1062.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $9.38
+TOTAL: $1071.88
+==================
+Recibo ORD-110 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+---
+Subtotal: $12750.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $112.50
+TOTAL: $12862.50
+==================
+Recibo ORD-111 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+---
+Subtotal: $47.70
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $0.74
+TOTAL: $48.44
+==================
+Recibo ORD-112 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+---
+Subtotal: $143.10
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $2.22
+TOTAL: $145.32
+==================
+Recibo ORD-113 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+---
+Subtotal: $477.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $7.39
+TOTAL: $484.39
+==================
+Recibo ORD-114 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+---
+Subtotal: $1192.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $18.48
+TOTAL: $1210.98
+==================
+Recibo ORD-115 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+---
+Subtotal: $14310.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $221.70
+TOTAL: $14531.70
+==================
+Recibo ORD-116 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+---
+Subtotal: $51.60
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.01
+TOTAL: $52.61
+==================
+Recibo ORD-117 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+---
+Subtotal: $154.80
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $3.04
+TOTAL: $157.84
+==================
+Recibo ORD-118 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+---
+Subtotal: $516.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $10.12
+TOTAL: $526.12
+==================
+Recibo ORD-119 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+---
+Subtotal: $1290.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $25.30
+TOTAL: $1315.30
+==================
+Recibo ORD-120 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+---
+Subtotal: $15480.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $303.60
+TOTAL: $15783.60
+==================
+Recibo ORD-121 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x1 = $30.00
+2. Café en grano 1kg (FD-010) x1 = $12.50
+3. Cuaderno A5 (GN-777) x1 = $5.20
+4. Bolígrafos (pack 10) (GN-123) x1 = $3.90
+5. Té verde 200g (FD-222) x1 = $6.75
+---
+Subtotal: $58.35
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $1.21
+TOTAL: $59.56
+==================
+Recibo ORD-122 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x3 = $90.00
+2. Café en grano 1kg (FD-010) x3 = $37.50
+3. Cuaderno A5 (GN-777) x3 = $15.60
+4. Bolígrafos (pack 10) (GN-123) x3 = $11.70
+5. Té verde 200g (FD-222) x3 = $20.25
+---
+Subtotal: $175.05
+Descuento de la suerte: -$5.36 (3.06%)
+Impuestos: $3.64
+TOTAL: $173.33
+==================
+Recibo ORD-123 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x10 = $300.00
+2. Café en grano 1kg (FD-010) x10 = $125.00
+3. Cuaderno A5 (GN-777) x10 = $52.00
+4. Bolígrafos (pack 10) (GN-123) x10 = $39.00
+5. Té verde 200g (FD-222) x10 = $67.50
+---
+Subtotal: $583.50
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $12.15
+TOTAL: $595.65
+==================
+Recibo ORD-124 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x25 = $750.00
+2. Café en grano 1kg (FD-010) x25 = $312.50
+3. Cuaderno A5 (GN-777) x25 = $130.00
+4. Bolígrafos (pack 10) (GN-123) x25 = $97.50
+5. Té verde 200g (FD-222) x25 = $168.75
+---
+Subtotal: $1458.75
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $30.36
+TOTAL: $1489.11
+==================
+Recibo ORD-125 - 10/12/2025 1:23:42 PM
+1. Libro: Clean Code (BK-001) x300 = $9000.00
+2. Café en grano 1kg (FD-010) x300 = $3750.00
+3. Cuaderno A5 (GN-777) x300 = $1560.00
+4. Bolígrafos (pack 10) (GN-123) x300 = $1170.00
+5. Té verde 200g (FD-222) x300 = $2025.00
+---
+Subtotal: $17505.00
+Descuento de la suerte: $0.00 (0.00%)
+Impuestos: $364.35
+TOTAL: $17869.35"
+`;
