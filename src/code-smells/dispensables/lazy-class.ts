@@ -1,22 +1,29 @@
-// Code smell: Lazy Class [Clase perezosa]. Esta clase agrega un comportamiento insignificante
-// sobre un primitivo simple y no justifica su existencia.
+// Este archivo demuestra el code smell "Lazy Class [Clase perezosa]".
 
-// Ejercicio: Añade validación y formateo para IDs (p. ej., debe ser UUID, mostrar forma corta).
+// Una clase que no aporta valor real: solo envuelve una operación trivial
+// que podría ser una función. Mantenerla añade complejidad innecesaria.
 
-// Te verás tentado a ir esparciendo pequeños métodos aquí y en los puntos de uso,
-// mostrando cómo una clase perezosa invita a cambios dispersos y de poco valor en lugar de un comportamiento cohesivo.
+// Ejercicio: Reescribir el código para poder deshacernos de la clase ShippingLabelBuilder.
 
-export class IdWrapper {
-  constructor(public id: string) {
-  }
+export type Address = { name: string; line1: string; city?: string }
 
-  getId(): string {
-    return this.id
+// Lazy class: podría ser reemplazada por una función
+export class ShippingLabelBuilder {
+  build(a: Address): string {
+    return `${a.name} — ${a.line1}${a.city ? ", " + a.city : ""}`
   }
 }
 
-// Example usage creating and reading the trivial wrapper
-export function demoLazyClass(): string {
-  const w = new IdWrapper('abc-123')
-  return w.getId()
+// Example usage
+export function printShippingLabel() {
+  const address: Address = {
+    name: "John Doe",
+    line1: "123 Main St",
+    city: "New York"
+  };
+
+  const labelBuilder = new ShippingLabelBuilder();
+  const label = labelBuilder.build(address);
+  console.log(label);
 }
+
