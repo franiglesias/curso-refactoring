@@ -1,13 +1,13 @@
 function categorizeUser(age: number): string {
   if (age < 13) {
-    return "child"
+    return 'child'
   }
 
   if (age < 18) {
-    return "teenager"
+    return 'teenager'
   }
 
-  return "adult"
+  return 'adult'
 }
 
 abstract class User {
@@ -21,7 +21,6 @@ class TeenagerUser extends User {
 
 class AdultUser extends User {
 }
-
 
 class UserFactory {
   create(age: number): User {

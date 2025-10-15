@@ -14,10 +14,6 @@ class Customer {
   getAddress(): Address {
     return this.address
   }
-
-  getCity(): string {
-    return this.address.getCity()
-  }
 }
 
 class Order {
@@ -27,11 +23,7 @@ class Order {
   getCustomer(): Customer {
     return this.customer
   }
-
-  getCity(): string {
-    return this.customer.getCity()
-  }
 }
 
 const order = new Order(new Customer(new Address('Madrid')))
-console.log(order.getCity())
+console.log(order.getCustomer().getAddress().getCity())

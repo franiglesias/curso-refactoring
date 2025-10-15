@@ -10,20 +10,19 @@ export type Address = { name: string; line1: string; city?: string }
 // Lazy class: podría ser reemplazada por una función
 export class ShippingLabelBuilder {
   build(a: Address): string {
-    return `${a.name} — ${a.line1}${a.city ? ", " + a.city : ""}`
+    return `${a.name} — ${a.line1}${a.city ? ', ' + a.city : ''}`
   }
 }
 
 // Example usage
 export function printShippingLabel() {
   const address: Address = {
-    name: "John Doe",
-    line1: "123 Main St",
-    city: "New York"
-  };
+    name: 'John Doe',
+    line1: '123 Main St',
+    city: 'New York',
+  }
 
-  const labelBuilder = new ShippingLabelBuilder();
-  const label = labelBuilder.build(address);
-  console.log(label);
+  const labelBuilder = new ShippingLabelBuilder()
+  const label = labelBuilder.build(address)
+  console.log(label)
 }
-
