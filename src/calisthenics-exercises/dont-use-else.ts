@@ -25,8 +25,8 @@ export function shippingCost(weightKg: number, destination: 'DOMESTIC' | 'INTERN
 /*
 Ejercicio (refactorizar hacia la regla):
 - Reemplazar cadenas de else por:
-  1) Cláusulas de guarda: retornos tempranos para DOMESTIC/INTERNATIONAL y tramos de peso.
-  2) Objetos estrategia: un mapa { DOMESTIC: DomesticShipping, INTERNATIONAL: InternationalShipping } donde cada política calcula el costo sin else.
-  3) Componer reglas mediante tablas de datos y búsqueda de funciones en lugar de ramificaciones.
+  1) Cláusulas de guarda
+  2) Objetos estrategia
+  3) Componer reglas mediante tablas de datos y búsqueda de funciones.
 - Aceptación: Las funciones no contienen la palabra clave else y siguen siendo legibles y comprobables.
 */

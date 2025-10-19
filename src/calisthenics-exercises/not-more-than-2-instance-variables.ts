@@ -27,8 +27,5 @@ export class CheckoutSession {
 /*
 Ejercicio (refactorizar hacia la regla):
 - Reducir variables de instancia extrayendo objetos/entidades de valor cohesivos:
-  1) Extraer Cart, CustomerId, Addresses, Coupon, Payment, Currency, TaxPolicy.
-  2) Mover el comportamiento a estos tipos (p. ej., Cart.total(), TaxPolicy.apply(), Currency.convert()).
-  3) Mantener CheckoutSession con como máximo dos campos: cart y paymentContext (o tipos agregados similares).
 - Aceptación: CheckoutSession no tiene más de 2 variables de instancia; la lógica se distribuye en tipos dedicados.
 */
