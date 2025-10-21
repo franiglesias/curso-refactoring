@@ -1,4 +1,5 @@
-// Code smell: Middleman [Intermediario]. Shop hace poco más que delegar a Catalog, añadiendo
+// Code smell: Middleman [Intermediario].
+// Shop hace poco más que delegar a Catalog, añadiendo
 // una capa innecesaria que oscurece al colaborador real.
 
 // Ejercicio: Añade una funcionalidad searchByPrefix.

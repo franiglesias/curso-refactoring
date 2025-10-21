@@ -1,5 +1,8 @@
-// Code smell: Parallel Inheritance Hierarchy [Jerarquía de herencia paralela]. Agregar un nuevo componente de UI obliga a agregar
-// métodos correspondientes en cada renderer, haciendo que ambas jerarquías crezcan al unísono.
+// Code smell: Parallel Inheritance Hierarchy
+// [Jerarquía de herencia paralela].
+// Agregar un nuevo componente de UI obliga a agregar
+// métodos correspondientes en cada renderer,
+// haciendo que ambas jerarquías crezcan al unísono.
 
 // Ejercicio: Añade un componente Image.
 

@@ -1,10 +1,14 @@
-// Este archivo demuestra el code smell "Duplicated Code [Código duplicado]".
-// Dos funciones abajo realizan la misma lógica con solo pequeñas diferencias en los nombres.
+// Este archivo demuestra el code smell "Duplicated Code
+// [Código duplicado]".
+// Dos funciones abajo realizan la misma lógica con solo
+// pequeñas diferencias en los nombres.
 
-// Ejercicio: Cambia la regla de impuestos a escalonada (p. ej., 10% hasta $100 y 21% por encima).
+// Ejercicio: Cambia la regla de impuestos a escalonada
+// (p. ej., 10% hasta $100 y 21% por encima).
 
-// Tendrás que actualizar múltiples implementaciones duplicadas y recordar mantenerlas
-// consistentes, mostrando cómo la duplicación multiplica el esfuerzo y el riesgo.
+// Tendrás que actualizar múltiples implementaciones duplicadas
+// y recordar mantenerlas consistentes, mostrando cómo
+// la duplicación multiplica el esfuerzo y el riesgo.
 
 export function calculateOrderTotalWithTax(
   items: { price: number; qty: number }[],

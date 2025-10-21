@@ -1,7 +1,10 @@
-// Code smell: Refused Bequest [Herencia rechazada]. Una subclase hereda de un tipo base pero sobrescribe/ignora
-// partes del contrato, lo que indica una jerarquía equivocada o una abstracción faltante.
+// Code smell: Refused Bequest [Herencia rechazada].
+// Una subclase hereda de un tipo base pero sobrescribe/ignora
+// partes del contrato, lo que indica una jerarquía equivocada
+// o una abstracción faltante.
 
-// Ejercicio: Añade un método de ciclo de vida "pause" requerido por todos los controladores y vuelve
+// Ejercicio: Añade un método de ciclo de vida "pause"
+// requerido por todos los controladores y vuelve
 // obligatorios start/stop.
 
 // ReadOnlyController forzará excepciones incómodas o implementaciones no-op,

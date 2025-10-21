@@ -3,7 +3,8 @@
 // Una clase que no aporta valor real: solo envuelve una operación trivial
 // que podría ser una función. Mantenerla añade complejidad innecesaria.
 
-// Ejercicio: Reescribir el código para poder deshacernos de la clase ShippingLabelBuilder.
+// Ejercicio: Reescribir el código para poder deshacernos
+// de la clase ShippingLabelBuilder.
 
 export type Address = { name: string; line1: string; city?: string }
 

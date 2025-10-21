@@ -1,7 +1,10 @@
-// Code smell: Divergent Change [Cambio divergente]. ProfileManager maneja validación, persistencia,
-// exportación y envío de emails—múltiples razones para cambiar concentradas en una sola clase.
+// Code smell: Divergent Change [Cambio divergente].
+// ProfileManager maneja validación, persistencia,
+// exportación y envío de emails—múltiples razones
+// para cambiar concentradas en una sola clase.
 
-// Ejercicio: Añade un número de teléfono con validación, inclúyelo en las exportaciones y envía un SMS.
+// Ejercicio: Añade un número de teléfono con validación,
+// inclúyelo en las exportaciones y envía un SMS.
 
 // Tocarás validación, almacenamiento, exportAsJson/Csv y mensajería en un solo lugar,
 // demostrando cómo un cambio fuerza ediciones en responsabilidades no relacionadas.

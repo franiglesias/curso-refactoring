@@ -1,11 +1,15 @@
 // Este archivo demuestra el code smell "Comments [Comentarios]".
-// Estos comentarios son excesivamente verbosos y explican código obvio, añadiendo ruido
-// en lugar de valor. El código en sí es trivial y se explica solo.
+// Estos comentarios son excesivamente verbosos y explican código obvio,
+// añadiendo ruido en lugar de valor.
+// El código en sí es trivial y se explica solo.
 
-// Ejercicio: Actualiza esta función para registrar cuando la suma sea negativa.
+// Ejercicio: Actualiza esta función para registrar
+// cuando la suma sea negativa.
 
-// Observa cómo los comentarios de alrededor se vuelven obsoletos o engañosos rápidamente,
-// obligándote a editar muchas líneas de comentario por un cambio diminuto y arriesgando desalineación.
+// Observa cómo los comentarios de alrededor se vuelven
+// obsoletos o engañosos rápidamente,
+// obligándote a editar muchas líneas de comentario
+// por un cambio diminuto y arriesgando desalineación.
 
 // Esta función suma dos números y devuelve el resultado.
 // Toma el parámetro a que es un número y el parámetro b que también es un número.

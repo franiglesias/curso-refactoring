@@ -1,6 +1,7 @@
-// Code smell: Alternative Classes with Different Interfaces [Clases alternativas con interfaces diferentes].
-// Dos clases son intercambiables pero exponen nombres de métodos distintos, forzando código condicional
-// en los clientes e impidiendo el polimorfismo.
+// Code smell: Alternative Classes with Different Interfaces
+// [Clases alternativas con interfaces diferentes].
+// Dos clases son intercambiables, pero exponen nombres de métodos distintos,
+// forzando código condicional en los clientes e impidiendo el polimorfismo.
 
 // Ejercicio: Añade logging con marca de tiempo a ambas implementaciones y permite intercambiarlas en tiempo de ejecución.
 

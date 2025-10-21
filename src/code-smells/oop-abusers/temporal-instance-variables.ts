@@ -1,10 +1,16 @@
-// Code smell: Temporal Instance Variables [Variables de instancia temporales]. Los campos se configuran solo durante
-// una fase específica del ciclo de vida de un objeto, aumentando la probabilidad de mal uso entre fases.
+// Code smell: Temporal Instance Variables
+// [Variables de instancia temporales].
+// Los campos se configuran solo durante
+// una fase específica del ciclo de vida de un objeto,
+// aumentando la probabilidad de mal uso entre fases.
 
-// Ejercicio: Añade una función de auto-guardado que pueda llamarse en cualquier momento.
+// Ejercicio: Añade una función de auto-guardado que pueda
+// llamarse en cualquier momento.
 
-// Necesitarás manejar estados donde title/range/buffer puedan estar medio inicializados,
-// revelando cómo el acoplamiento temporal complica cambios aparentemente simples.
+// Necesitarás manejar estados donde title/range/buffer
+// puedan estar medio inicializados,
+// revelando cómo el acoplamiento temporal complica
+// cambios aparentemente simples.
 
 export class ReportBuilder {
   private title?: string | undefined

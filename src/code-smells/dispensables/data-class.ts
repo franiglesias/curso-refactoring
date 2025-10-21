@@ -1,9 +1,12 @@
 import {v4 as uuidv4} from 'uuid'
 
-// Code smell: Data Class [Clase de datos]. UserRecord expone datos públicos con poco o ningún comportamiento,
-// empujando toda la lógica a otras clases y fomentando modelos de dominio anémicos.
+// Code smell: Data Class [Clase de datos].
+// UserRecord expone datos públicos con poco o ningún comportamiento,
+// empujando toda la lógica a otras clases y fomentando modelos
+// de dominio anémicos.
 
-// Ejercicio: Requiere verificación de email y reglas de dominio (p. ej., solo company.com).
+// Ejercicio: Requiere verificación de email y reglas de dominio
+// (p. ej., solo company.com).
 
 // Necesitarás tocar múltiples servicios y lugares que manipulan UserRecord,
 // mostrando cómo separar el comportamiento de los datos hace que cambios simples se dispersen ampliamente.

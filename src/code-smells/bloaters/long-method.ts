@@ -1,12 +1,15 @@
-// Code smell: Long Method [Método largo]. El método process mezcla validación, cálculo, descuentos,
+// Code smell: Long Method [Método largo].
+//
+//  El método process mezcla validación, cálculo, descuentos,
 // persistencia simulada, envío de emails e impresión en un solo bloque largo.
 // Esto dificulta leerlo, probarlo y cambiar una parte sin arriesgar las demás.
-//
-// Exercise: Añade soporte de cupones con expiración y multi‑moneda (USD/EUR) con
-// reglas de redondeo distintas.
+
+// Exercise: Añade soporte de cupones con expiración y multi‑moneda (USD/EUR)
+// con reglas de redondeo distintas.
 
 // Verás que tienes que tocar múltiples secciones dentro de este método largo
-// (validación, cálculo, descuentos, salida), aumentando el riesgo y el esfuerzo.
+// (validación, cálculo, descuentos, salida),
+// aumentando el riesgo y el esfuerzo.
 
 class OrderService {
   process(order: Order) {

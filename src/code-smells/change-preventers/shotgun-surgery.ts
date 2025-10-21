@@ -1,10 +1,13 @@
-// Code smell: Shotgun Surgery [Cirugía de escopeta]. La misma regla de impuestos está duplicada en muchas clases;
+// Code smell: Shotgun Surgery [Cirugía de escopeta].
+// La misma regla de impuestos está duplicada en muchas clases;
 // cambiarla requiere ediciones en múltiples lugares.
 
 // Ejercicio: Cambia el impuesto del 21% al 18.5% con redondeo a 2 decimales.
 
-// Tendrás que buscar cada copia y asegurar un redondeo consistente en todas partes,
-// destacando cómo la duplicación convierte un cambio pequeño en muchas ediciones arriesgadas.
+// Tendrás que buscar cada copia y asegurar un redondeo
+// consistente en todas partes,
+// destacando cómo la duplicación convierte un cambio pequeño
+// en muchas ediciones arriesgadas.
 
 export type LineItem = { name: string; price: number; qty: number }
 
