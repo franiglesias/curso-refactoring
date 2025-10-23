@@ -24,15 +24,15 @@ export function calculateOrderTotalWithTax(
 
 // Versión duplicada con diferencias menores en nombres pero lógica idéntica.
 export function computeCartTotalIncludingTax(
-  products: { price: number; quantity: number }[],
+  items: { price: number; quantity: number }[],
   taxRate: number,
 ): number {
-  let partial = 0
-  for (const p of products) {
-    partial += p.price * p.quantity
+  let subtotal = 0
+  for (const item of items) {
+    subtotal += item.price * item.quantity
   }
-  const tax = partial * taxRate
-  return partial + tax
+  const tax = subtotal * taxRate
+  return subtotal + tax
 }
 
 // Ejemplo de uso que (innecesariamente) llama a ambas implementaciones duplicadas

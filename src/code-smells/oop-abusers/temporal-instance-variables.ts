@@ -12,6 +12,9 @@
 // revelando cómo el acoplamiento temporal complica
 // cambios aparentemente simples.
 
+import {PizzaOrder} from "./temporal-instance-pizza";
+import {PizzaOrderSolved} from "./temporal-instance-pizza-solved";
+
 export class ReportBuilder {
   private title?: string | undefined
   private rangeStart?: Date | undefined
@@ -55,4 +58,22 @@ export function demoTemporalInstanceVariables(): string {
   b.addLine('Line A')
   b.addLine('Line B')
   return b.finish()
+}
+
+// Clear example flow for PizzaOrder showing correct temporal sequence
+export function demoPizzaOrder(): string {
+  const o = new PizzaOrder()
+  o.start('L')
+  o.addTopping('pepperoni')
+  o.addTopping('mushroom')
+  o.setDeliveryAddress('123 Main St')
+  return o.place()
+}
+
+// Refactored demo without temporal instance variables
+export function demoPizzaOrderSolved(): string {
+  const order = new PizzaOrderSolved({size: 'L', address: '123 Main St'})
+    .withTopping('pepperoni')
+    .withTopping('mushroom')
+  return order.place()
 }

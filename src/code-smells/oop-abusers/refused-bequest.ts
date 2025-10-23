@@ -10,7 +10,17 @@
 // ReadOnlyController forzará excepciones incómodas o implementaciones no-op,
 // mostrando el coste de una herencia mal planteada.
 
-class BaseController {
+interface Resettable {
+  reset(): void
+}
+
+interface Controller {
+  start(): void
+
+  stop(): void
+}
+
+class BaseController implements Controller, Resettable {
   start(): void {
     console.log('starting')
   }
@@ -24,20 +34,16 @@ class BaseController {
   }
 }
 
-export class ReadOnlyController extends BaseController {
+export class ReadOnlyController implements Controller {
   start(): void {
   }
 
   stop(): void {
   }
-
-  reset(): void {
-    throw new Error('operation not supported')
-  }
 }
 
 export function demoRefusedBequest(readonly: boolean): void {
-  const controller = readonly ? new ReadOnlyController() : new BaseController()
+  const controller: Controller = readonly ? new ReadOnlyController() : new BaseController()
   controller.start()
   controller.stop()
 }

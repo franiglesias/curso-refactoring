@@ -9,34 +9,71 @@
 // de llamada, aumentando la probabilidad de errores y
 // dificultando cambios futuros.
 
+// Refactor Introduce Parameter Object
+
+type ReportParameters = {
+  title: string,
+  startDate: Date,
+  endDate: Date,
+  includeCharts: boolean,
+  includeSummary: boolean,
+  authorName: string,
+  authorEmail: string,
+  locale: string,
+  pageSize: number,
+}
+
+type ReportOptions = {
+  includeCharts: boolean,
+  includeSummary: boolean,
+  locale: string,
+  pageSize: number,
+}
+
+type ReportContent = {
+  title: string,
+  startDate: Date,
+  endDate: Date,
+  authorName: string,
+  authorEmail: string,
+}
+
 class ReportGenerator {
-  generateReport(
-    title: string,
-    startDate: Date,
-    endDate: Date,
-    includeCharts: boolean,
-    includeSummary: boolean,
-    authorName: string,
-    authorEmail: string,
+  private options: ReportOptions;
+
+  constructor(
+    options: ReportOptions,
   ) {
-    console.log(`Generando reporte: ${title}`)
-    console.log(`Desde ${startDate.toDateString()} hasta ${endDate.toDateString()}`)
-    console.log(`Autor: ${authorName} (${authorEmail})`)
-    if (includeCharts) console.log('Incluyendo gráficos...')
-    if (includeSummary) console.log('Incluyendo resumen...')
+    this.options = options;
+  }
+
+  generateReport(
+    params: ReportContent,
+  ) {
+    console.log(`Generando reporte: ${params.title}`)
+    console.log(`Desde ${params.startDate.toDateString()} hasta ${params.endDate.toDateString()}`)
+    console.log(`Autor: ${params.authorName} (${params.authorEmail})`)
+    if (this.options.includeCharts) console.log('Incluyendo gráficos...')
+    if (this.options.includeSummary) console.log('Incluyendo resumen...')
     console.log('Reporte generado exitosamente.')
   }
 }
 
 export function demoLongParameterList(): void {
-  const gen = new ReportGenerator()
-  gen.generateReport(
-    'Ventas Q1',
-    new Date('2025-01-01'),
-    new Date('2025-03-31'),
-    true,
-    false,
-    'Pat Smith',
-    'pat@example.com',
-  )
+  const options = {
+    includeCharts: true,
+    includeSummary: false,
+    locale: 'es-ES',
+    pageSize: 100,
+  }
+
+  const content = {
+    title: 'Ventas Q1',
+    startDate: new Date('2025-01-01'),
+    endDate: new Date('2025-03-31'),
+    authorName: 'Pat Smith',
+    authorEmail: 'pat@example.com',
+  }
+  const gen = new ReportGenerator(options)
+  gen.generateReport(content)
 }
