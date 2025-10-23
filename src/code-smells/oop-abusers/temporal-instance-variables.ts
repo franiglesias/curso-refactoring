@@ -1,64 +1,46 @@
-// Code smell: Temporal Instance Variables
-// [Variables de instancia temporales].
-// Los campos se configuran solo durante
-// una fase específica del ciclo de vida de un objeto,
-// aumentando la probabilidad de mal uso entre fases.
+// Temporal Instance Variables [Variables de instancia temporales].
+//
+// PizzaOrder shows a strict temporal sequence
+// start(size) -> addTopping() -> setDeliveryAddress() -> place()
+// The object keeps temporary state that is only valid between start() and place().
 
-// Ejercicio: Añade una función de auto-guardado que pueda
-// llamarse en cualquier momento.
+export class PizzaOrder {
+  private size?: 'S' | 'M' | 'L'
+  private toppings: string[] = []
+  private address?: string
 
-// Necesitarás manejar estados donde title/range/buffer
-// puedan estar medio inicializados,
-// revelando cómo el acoplamiento temporal complica
-// cambios aparentemente simples.
-
-import {PizzaOrder} from "./temporal-instance-pizza";
-import {PizzaOrderSolved} from "./temporal-instance-pizza-solved";
-
-export class ReportBuilder {
-  private title?: string | undefined
-  private rangeStart?: Date | undefined
-  private rangeEnd?: Date | undefined
-  private buffer: string[] = []
-
-  begin(title: string): void {
-    this.title = title
-    this.buffer = []
+  // Must be called first
+  start(size: 'S' | 'M' | 'L') {
+    this.size = size
+    this.toppings = []
+    this.address = this.address // keep previous address if any (another temporal coupling pitfall)
   }
 
-  setRange(start: Date, end: Date): void {
-    this.rangeStart = start
-    this.rangeEnd = end
+  addTopping(topping: string) {
+    // Implicit temporal coupling: requires start() before addTopping()
+    if (!this.size) {
+      // In real life this might silently fail or throw.
+      // Here we just no-op to keep the demo simple.
+      return
+    }
+    this.toppings.push(topping)
   }
 
-  addLine(text: string): void {
-    this.buffer.push(text)
+  setDeliveryAddress(address: string) {
+    this.address = address
   }
 
-  finish(): string {
-    const header = this.title ?? ''
-    const range =
-      this.rangeStart && this.rangeEnd
-        ? `${this.rangeStart.toISOString()}..${this.rangeEnd.toISOString()}`
-        : ''
-    const body = this.buffer.join('\n')
-    this.title = undefined
-    this.rangeStart = undefined
-    this.rangeEnd = undefined
-    this.buffer = []
-    return [header, range, body].filter(Boolean).join('\n')
+  // Ends the session and resets the internal state (temporal variables)
+  place(): string {
+    const summary = `Pizza ${this.size ?? '?'} to ${this.address ?? 'UNKNOWN'} with [${this.toppings.join(', ')}]`
+    // Reset all temporal state — another hint of the smell
+    this.size = undefined
+    this.address = undefined
+    this.toppings = []
+    return summary
   }
 }
 
-// Example usage showing the required call order; misuse between phases is easy
-export function demoTemporalInstanceVariables(): string {
-  const b = new ReportBuilder()
-  b.begin('Weekly Report')
-  b.setRange(new Date('2025-10-01'), new Date('2025-10-07'))
-  b.addLine('Line A')
-  b.addLine('Line B')
-  return b.finish()
-}
 
 // Clear example flow for PizzaOrder showing correct temporal sequence
 export function demoPizzaOrder(): string {
@@ -70,10 +52,3 @@ export function demoPizzaOrder(): string {
   return o.place()
 }
 
-// Refactored demo without temporal instance variables
-export function demoPizzaOrderSolved(): string {
-  const order = new PizzaOrderSolved({size: 'L', address: '123 Main St'})
-    .withTopping('pepperoni')
-    .withTopping('mushroom')
-  return order.place()
-}
