@@ -1,12 +1,12 @@
-// Code smell: Data Clump [Grupo de datos].
-// El mismo grupo de campos de datos viaja junto por muchos lugares,
-// lo que sugiere un Value Object faltante y duplicación.
+# Data clump (Grupo de datos)
 
-// Ejercicio: Añade país/provincia y reglas de formateo internacional.
+## Definición
 
-// Necesitarás modificar constructores, impresores y cualquier lugar que pase estos campos juntos,
-// multiplicando la superficie de cambio.
+El mismo grupo de campos de datos viaja junto por muchos lugares, lo que sugiere un Value Object faltante y duplicación.
 
+## Ejemplo
+
+```typescript
 export class Invoice {
   constructor(
     private customerName: string,
@@ -35,3 +35,13 @@ export class ShippingLabel {
     return `Enviar a: ${this.customerName}\n` + `${this.customerStreet}, ${this.customerCity}, ${this.customerZip}`
   }
 }
+```
+
+## Ejercicio
+
+Añade país y provincia y reglas de formateo internacional de la dirección.
+
+## Problemas que encontrarás
+
+Necesitarás modificar constructores, impresores y cualquier lugar que pase estos campos juntos, multiplicando la superficie de cambio.
+
