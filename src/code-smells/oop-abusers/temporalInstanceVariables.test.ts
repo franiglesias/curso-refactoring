@@ -1,7 +1,7 @@
-import {describe, expect, it} from "vitest";
-import {demoPizzaOrder, demoPizzaOrderSolved, ReportBuilder} from "./temporal-instance-variables";
-import {PizzaOrder} from "./temporal-instance-pizza";
-import {PizzaOrderSolved} from "./temporal-instance-pizza-solved";
+import {describe, expect, it} from 'vitest'
+import {demoPizzaOrder, demoPizzaOrderSolved, ReportBuilder} from './temporal-instance-variables'
+import {PizzaOrder} from './temporal-instance-pizza'
+import {PizzaOrderSolved} from './temporal-instance-pizza-solved'
 
 describe('Temporal Instance Variables', () => {
   it('ReportBuilder demo still works', () => {
@@ -12,7 +12,7 @@ describe('Temporal Instance Variables', () => {
     b.setRange(new Date('2025-10-01'), new Date('2025-10-07'))
     const out = b.finish()
     expect(typeof out).toBe('string')
-  });
+  })
 
   it('PizzaOrder provides a clearer example', () => {
     const result = demoPizzaOrder()

@@ -41,7 +41,6 @@ export class PizzaOrder {
   }
 }
 
-
 // Clear example flow for PizzaOrder showing correct temporal sequence
 export function demoPizzaOrder(): string {
   const o = new PizzaOrder()
@@ -51,4 +50,3 @@ export function demoPizzaOrder(): string {
   o.setDeliveryAddress('123 Main St')
   return o.place()
 }
-

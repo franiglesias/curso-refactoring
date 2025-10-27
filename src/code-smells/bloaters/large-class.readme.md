@@ -2,7 +2,8 @@
 
 ## Definición
 
-Una clase contiene muchas propiedades, muchos métodos o muchas líneas de código, acumulando muchas responsabilidades no relacionadas o que pueden responder a necesidades diferentes.
+Una clase contiene muchas propiedades, muchos métodos o muchas líneas de código, acumulando muchas
+responsabilidades no relacionadas o que pueden responder a necesidades diferentes.
 
 ## Ejemplo
 
@@ -84,5 +85,5 @@ Añade soporte para autenticación de dos factores (2FA) y preferencias de notif
 
 ## Problemas que encontrarás
 
-Tocarás autenticación, estado y notificaciones en una clase inflada, aumentando la probabilidad de romper comportamiento no relacionado.
-
+Tocarás autenticación, estado y notificaciones en una clase inflada, aumentando la probabilidad de
+romper comportamiento no relacionado.

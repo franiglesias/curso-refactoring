@@ -9,4 +9,3 @@ export class Mailer {
   send(msg: EmailMessage): string {
   }
 }
-

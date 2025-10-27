@@ -19,11 +19,12 @@ línea:
 - Región `US`: 7% plano sobre el subtotal.
 - Región `EU`: 20% plano solo sobre los ítems gravables (libros y comida exentos).
 
-Queremos introducir el producto en nuevas regiones, por lo que necesitamos una forma de
-configurar estas reglas.
+Queremos introducir el producto en nuevas regiones, por lo que necesitamos una forma de configurar
+estas reglas.
 
 - Región `RU`: 10% plano sobre items gravables, excepto comida que es el 5%.
-- Región `UK`: 10% hasta un importe de 150 y 12% para items de más de 150 sobre los ítems gravables. Libros exentos. Comida 2% plano.
+- Región `UK`: 10% hasta un importe de 150 y 12% para items de más de 150 sobre los ítems gravables.
+  Libros exentos. Comida 2% plano.
 
 También hay funciones auxiliares como `roundCurrency` y un uso de ejemplo en `demoSprout()`.
 

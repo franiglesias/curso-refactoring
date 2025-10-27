@@ -1,9 +1,9 @@
-import {describe, expect, it} from "vitest";
-import {calculateTotal, CartItem, Region} from "./sprout-change";
+import {describe, expect, it} from 'vitest'
+import {calculateTotal, CartItem, Region} from './sprout-change'
 
 describe('Sprout Change', () => {
   function executeSubject(cart: CartItem[], region: Region) {
-    return calculateTotal(cart, region);
+    return calculateTotal(cart, region)
   }
 
   const cart: CartItem[] = [
@@ -14,9 +14,9 @@ describe('Sprout Change', () => {
 
   it('should calculate the total for EU', () => {
     expect(executeSubject(cart, 'EU')).toEqual(104)
-  });
+  })
 
   it('should calculate the total for US', () => {
     expect(executeSubject(cart, 'US')).toEqual(107)
-  });
+  })
 })

@@ -12,44 +12,40 @@
 // Refactor Introduce Parameter Object
 
 type ReportParameters = {
-  title: string,
-  startDate: Date,
-  endDate: Date,
-  includeCharts: boolean,
-  includeSummary: boolean,
-  authorName: string,
-  authorEmail: string,
-  locale: string,
-  pageSize: number,
+  title: string
+  startDate: Date
+  endDate: Date
+  includeCharts: boolean
+  includeSummary: boolean
+  authorName: string
+  authorEmail: string
+  locale: string
+  pageSize: number
 }
 
 type ReportOptions = {
-  includeCharts: boolean,
-  includeSummary: boolean,
-  locale: string,
-  pageSize: number,
+  includeCharts: boolean
+  includeSummary: boolean
+  locale: string
+  pageSize: number
 }
 
 type ReportContent = {
-  title: string,
-  startDate: Date,
-  endDate: Date,
-  authorName: string,
-  authorEmail: string,
+  title: string
+  startDate: Date
+  endDate: Date
+  authorName: string
+  authorEmail: string
 }
 
 class ReportGenerator {
-  private options: ReportOptions;
+  private options: ReportOptions
 
-  constructor(
-    options: ReportOptions,
-  ) {
-    this.options = options;
+  constructor(options: ReportOptions) {
+    this.options = options
   }
 
-  generateReport(
-    params: ReportContent,
-  ) {
+  generateReport(params: ReportContent) {
     console.log(`Generando reporte: ${params.title}`)
     console.log(`Desde ${params.startDate.toDateString()} hasta ${params.endDate.toDateString()}`)
     console.log(`Autor: ${params.authorName} (${params.authorEmail})`)

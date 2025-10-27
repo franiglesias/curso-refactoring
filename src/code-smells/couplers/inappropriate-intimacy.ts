@@ -9,17 +9,13 @@
 // comprobaciones y registros en muchos lugares, aumentando el acoplamiento y las regresiones.
 
 export class Team {
-  private name: string;
-  private budget: Budget;
+  private name: string
+  private budget: Budget
   private manager?: Manager
 
-  constructor(
-    name: string,
-    budget: number,
-  ) {
-
-    this.budget = new Budget(budget);
-    this.name = name;
+  constructor(name: string, budget: number) {
+    this.budget = new Budget(budget)
+    this.name = name
   }
 
   assignManager(m: Manager): void {
@@ -37,11 +33,11 @@ export class Team {
 }
 
 export class Manager {
-  private name: string;
+  private name: string
   private team?: Team
 
   constructor(name: string) {
-    this.name = name;
+    this.name = name
   }
 
   assignTeam(t: Team): void {
@@ -61,7 +57,7 @@ export class Manager {
 }
 
 export class Budget {
-  public amount: number;
+  public amount: number
 
   constructor(amount: number) {
     if (amount < 900) {
