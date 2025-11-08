@@ -74,7 +74,7 @@ class OrderService {
       id: dbRecordId,
       customerEmail: order.customerEmail,
       customerType: order.customerType,
-      items: order.items.map(i => ({name: i.name, price: i.price, quantity: i.quantity})),
+      items: order.items.map((i) => ({name: i.name, price: i.price, quantity: i.quantity})),
       amounts: {
         subtotal: order.subtotal,
         discount: order.discount,
@@ -90,7 +90,8 @@ class OrderService {
 
     // Validaciones redundantes antes de guardar
     const hasItems = Array.isArray(dbRecord.items) && dbRecord.items.length > 0
-    const totalsConsistent = typeof dbRecord.amounts.total === 'number' && dbRecord.amounts.total >= 0
+    const totalsConsistent =
+      typeof dbRecord.amounts.total === 'number' && dbRecord.amounts.total >= 0
     if (!hasItems) {
       console.warn('[DB] No se puede guardar: el pedido no tiene items')
     }
@@ -101,7 +102,9 @@ class OrderService {
     // Simular transformación/serialización pesada
     const serialized = JSON.stringify(dbRecord, null, 2)
     const payloadBytes = Buffer.byteLength(serialized, 'utf8')
-    console.log(`[DB] Serializando registro ${dbRecord.id} (${payloadBytes} bytes) para ${dbConnectionString}`)
+    console.log(
+      `[DB] Serializando registro ${dbRecord.id} (${payloadBytes} bytes) para ${dbConnectionString}`,
+    )
 
     // Simular reintentos de escritura
     let dbSaved = false
@@ -110,7 +113,9 @@ class OrderService {
       if (!dbConnected) {
         console.log(`[DB] Intento ${dbRetries}/${dbRetriesMax}: reconectando a la base de datos...`)
       } else {
-        console.log(`[DB] Intento ${dbRetries}/${dbRetriesMax}: guardando pedido ${dbRecord.id} con total ${formatMoney(total)}`)
+        console.log(
+          `[DB] Intento ${dbRetries}/${dbRetriesMax}: guardando pedido ${dbRecord.id} con total ${formatMoney(total)}`,
+        )
       }
       // Resultado aleatorio simulado, pero aquí siempre "exitoso" para no complicar flujos de prueba
       dbSaved = true
@@ -119,7 +124,9 @@ class OrderService {
     if (dbSaved) {
       console.log(`[DB] Pedido ${dbRecord.id} guardado correctamente`)
     } else {
-      console.error(`[DB] No se pudo guardar el pedido ${dbRecord.id} tras ${dbRetriesMax} intentos`)
+      console.error(
+        `[DB] No se pudo guardar el pedido ${dbRecord.id} tras ${dbRetriesMax} intentos`,
+      )
     }
 
     // Auditoría/bitácora adicional innecesaria
@@ -131,7 +138,7 @@ class OrderService {
       metadata: {
         ip: '127.0.0.1',
         userAgent: 'OrderService/1.0',
-      }
+      },
     }
     console.log('[AUDIT] Registro:', JSON.stringify(auditLogEntry))
 
@@ -142,7 +149,7 @@ class OrderService {
       port: 587,
       secure: false,
       auth: {user: 'notifier', pass: 'notifier'},
-      tls: {rejectUnauthorized: false}
+      tls: {rejectUnauthorized: false},
     }
     const emailTemplate = `
       Hola,
@@ -180,13 +187,21 @@ class OrderService {
     `
 
     const attachments = [
-      {filename: `pedido-${dbRecord.id}.json`, content: serialized, contentType: 'application/json'},
-      {filename: 'terminos.txt', content: 'Términos y condiciones...', contentType: 'text/plain'}
+      {
+        filename: `pedido-${dbRecord.id}.json`,
+        content: serialized,
+        contentType: 'application/json',
+      },
+      {filename: 'terminos.txt', content: 'Términos y condiciones...', contentType: 'text/plain'},
     ]
 
     // Simular cálculo de tamaño del correo
-    const emailSize = Buffer.byteLength(emailBodyHtml, 'utf8') + attachments.reduce((acc, a) => acc + Buffer.byteLength(a.content, 'utf8'), 0)
-    console.log(`[MAIL] Preparando correo (${emailSize} bytes) vía ${smtpConfig.host}:${smtpConfig.port}`)
+    const emailSize =
+      Buffer.byteLength(emailBodyHtml, 'utf8') +
+      attachments.reduce((acc, a) => acc + Buffer.byteLength(a.content, 'utf8'), 0)
+    console.log(
+      `[MAIL] Preparando correo (${emailSize} bytes) vía ${smtpConfig.host}:${smtpConfig.port}`,
+    )
 
     // Simular colas de envío y priorización
     const emailPriority = order.customerType === 'VIP' ? 'HIGH' : 'NORMAL'
@@ -198,7 +213,9 @@ class OrderService {
     let mailSent = false
     while (!mailSent && mailAttempts < mailAttemptsMax) {
       mailAttempts++
-      console.log(`[MAIL] Intento ${mailAttempts}/${mailAttemptsMax}: enviando correo a ${order.customerEmail}`)
+      console.log(
+        `[MAIL] Intento ${mailAttempts}/${mailAttemptsMax}: enviando correo a ${order.customerEmail}`,
+      )
       // Simulación simple de éxito
       mailSent = true
     }
@@ -207,13 +224,15 @@ class OrderService {
     if (mailSent) {
       console.log(`[MAIL] Correo enviado a ${order.customerEmail} (messageId=${messageId})`)
     } else {
-      console.error(`[MAIL] Fallo al enviar correo a ${order.customerEmail} tras ${mailAttemptsMax} intentos`)
+      console.error(
+        `[MAIL] Fallo al enviar correo a ${order.customerEmail} tras ${mailAttemptsMax} intentos`,
+      )
     }
 
     // Imprimir resumen -> enviar a impresora
     const printJob: PrintJob = {
       title: 'Resumen del pedido',
-      items: order.items.map(i => ({
+      items: order.items.map((i) => ({
         name: i.name,
         quantity: i.quantity,
         lineTotal: roundMoney(i.price * i.quantity),
@@ -227,7 +246,8 @@ class OrderService {
       currency: 'USD',
       formatted: {
         subtotal: formatMoney(order.subtotal),
-        discount: order.discount && order.discount > 0 ? `-${formatMoney(order.discount)}` : formatMoney(0),
+        discount:
+          order.discount && order.discount > 0 ? `-${formatMoney(order.discount)}` : formatMoney(0),
         tax: formatMoney(order.tax),
         shipping: formatMoney(order.shipping),
         total: formatMoney(order.total),
@@ -235,7 +255,7 @@ class OrderService {
       metadata: {
         customerEmail: order.customerEmail,
         createdAt: new Date().toISOString(),
-      }
+      },
     }
 
     // Simulación de envío a impresora: bloque deliberadamente grande y sobrecargado
@@ -258,19 +278,23 @@ class OrderService {
       supportsQr: true,
       supportsBarcode: true,
       supportsImages: false,
-      codepage: 'cp437'
+      codepage: 'cp437',
     }
 
     // Conexión (simulada)
     const printerConn = {connected: true, retries: 0, maxRetries: 2}
-    console.log(`[PRN] Preparando conexión a impresora ${printerConfig.name} (${printerConfig.interface}/${printerConfig.driver})`)
+    console.log(
+      `[PRN] Preparando conexión a impresora ${printerConfig.name} (${printerConfig.interface}/${printerConfig.driver})`,
+    )
 
     // Crear contenido del recibo
     const now = new Date()
     const lineWidth = printerConfig.maxCharsPerLine
 
-    const padRight = (text: string, len: number) => text.length >= len ? text.slice(0, len) : text + ' '.repeat(len - text.length)
-    const padLeft = (text: string, len: number) => text.length >= len ? text.slice(0, len) : ' '.repeat(len - text.length) + text
+    const padRight = (text: string, len: number) =>
+      text.length >= len ? text.slice(0, len) : text + ' '.repeat(len - text.length)
+    const padLeft = (text: string, len: number) =>
+      text.length >= len ? text.slice(0, len) : ' '.repeat(len - text.length) + text
     const repeat = (ch: string, n: number) => new Array(n + 1).join(ch)
 
     const formatLine = (left: string, right: string) => {
@@ -327,7 +351,7 @@ class OrderService {
       printerCaps.supportsBold ? '[BOLD ON]' : '[BOLD N/A]',
       '[PRINT LINES]',
       '[BOLD OFF]',
-      '[CUT PARTIAL]'
+      '[CUT PARTIAL]',
     ]
 
     // Montar payload a imprimir
@@ -349,12 +373,18 @@ class OrderService {
 
     // Vista previa ASCII (limitada para no saturar logs)
     const preview = textPayload.split('\n').slice(0, 12).join('\n')
-    console.log('[PRN] Vista previa del recibo:\n' + preview + (receiptLines.length > 12 ? `\n...(${receiptLines.length - 12} líneas más)` : ''))
+    console.log(
+      '[PRN] Vista previa del recibo:\n' +
+      preview +
+      (receiptLines.length > 12 ? `\n...(${receiptLines.length - 12} líneas más)` : ''),
+    )
 
     // Encolado de trabajo de impresión
     const printPriority = order.customerType === 'VIP' ? 'HIGH' : 'NORMAL'
     const printJobId = `prn-${Date.now()}-${Math.floor(Math.random() * 1000)}`
-    console.log(`[PRN] Encolando trabajo ${printJobId} (${spoolBytes} bytes, prioridad=${printPriority}) en ${printerConfig.location}`)
+    console.log(
+      `[PRN] Encolando trabajo ${printJobId} (${spoolBytes} bytes, prioridad=${printPriority}) en ${printerConfig.location}`,
+    )
 
     // Envío en trozos (chunking) para simular buffer limitado de la impresora
     const chunkSize = 256 // bytes
@@ -385,9 +415,13 @@ class OrderService {
 
     // Resultado final de impresión
     if (printerConn.connected && sentOk) {
-      console.log(`[PRN] Trabajo ${printJobId} impreso correctamente. Total enviado: ${sentBytes} bytes`)
+      console.log(
+        `[PRN] Trabajo ${printJobId} impreso correctamente. Total enviado: ${sentBytes} bytes`,
+      )
     } else {
-      console.error(`[PRN] Error al imprimir trabajo ${printJobId}. Enviado: ${sentBytes}/${spoolBytes} bytes`)
+      console.error(
+        `[PRN] Error al imprimir trabajo ${printJobId}. Enviado: ${sentBytes}/${spoolBytes} bytes`,
+      )
     }
   }
 }
@@ -399,4 +433,5 @@ Añade soporte de cupones con expiración y multi‑moneda (USD/EUR) con reglas 
 
 ## Problemas que encontrarás
 
-Tienes que tocar diferentes secciones dentro del método, lo que genera riesgo de cambios indeseados y aumenta el esfuerzo de mantenimiento.
+Tienes que tocar diferentes secciones dentro del método, lo que genera riesgo de cambios indeseados
+y aumenta el esfuerzo de mantenimiento.
