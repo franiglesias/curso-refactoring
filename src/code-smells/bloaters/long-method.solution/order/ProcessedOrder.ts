@@ -2,7 +2,7 @@ import {Order, OrderData} from './Order'
 import {OrderIdProvider} from '../OrderIdProvider'
 import {ValidatedOrder} from './ValidatedOrder'
 
-import {MapperFactory} from "../MapperFactory";
+import {MapperFactory} from '../MapperFactory'
 
 export class ProcessedOrder implements Order {
   id: number

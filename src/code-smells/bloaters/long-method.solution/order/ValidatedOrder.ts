@@ -2,7 +2,7 @@ import {Order} from './Order'
 import {OrderIdProvider} from '../OrderIdProvider'
 import {roundMoney} from '../long-method'
 import {ProcessedOrder} from './ProcessedOrder'
-import {MapperFactory} from "../MapperFactory";
+import {MapperFactory} from '../MapperFactory'
 
 export class ValidatedOrder implements Order {
   id: number

@@ -2,7 +2,7 @@ import {OrderIdProvider} from '../OrderIdProvider'
 import {ValidatedOrder} from './ValidatedOrder'
 import {ProcessedOrder} from './ProcessedOrder'
 
-import {MapperFactory} from "../MapperFactory";
+import {MapperFactory} from '../MapperFactory'
 
 export interface Order {
   id: number
@@ -74,54 +74,4 @@ export interface OrderDTO {
   tax?: number
   shipping?: number
   total?: number
-}
-
-export interface OrderRecordDTO extends OrderDTO {
-  amounts: {
-    subtotal: number | undefined
-    discount: number | undefined
-    tax: number | undefined
-    shipping: number | undefined
-    total: number | undefined
-  }
-  status: string
-  createdAt: string
-  updatedAt: string
-  currency: string
-}
-
-export interface OrderEmailDTO extends OrderDTO {
-  amounts: {
-    subtotal: number | undefined
-    discount: number | undefined
-    tax: number | undefined
-    shipping: number | undefined
-    total: number | undefined
-  }
-  status: string
-  createdAt: string
-  updatedAt: string
-  currency: string
-}
-
-export interface PrintOrderDTO extends OrderDTO {
-  lines: {
-    name: string
-    lineTotal: number
-    lineTotalFormatted: string
-    quantity: number
-  }[]
-  title: string
-  currency: string
-  formatted: {
-    subtotal: string
-    discount: string
-    tax: string
-    shipping: string
-    total: string
-  }
-  metadata: {
-    customerEmail: string
-    createdAt: string
-  }
 }

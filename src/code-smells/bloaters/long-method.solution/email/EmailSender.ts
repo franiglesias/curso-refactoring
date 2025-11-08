@@ -1,8 +1,9 @@
-import {Clock} from './Clock'
+import {Clock} from '../Clock'
 import {Buffer} from 'node:buffer'
-import {formatMoney} from './long-method'
-import {Order, OrderData, OrderEmailDTO, OrderRecordDTO} from './order/Order'
-import {MapperFactory} from "./MapperFactory";
+import {formatMoney} from '../long-method'
+import {Order} from '../order/Order'
+import {MapperFactory} from '../MapperFactory'
+import {OrderEmailDTO} from './OrderEmailDTO'
 
 export class EmailSender {
   private readonly clock: Clock
@@ -100,25 +101,9 @@ export class EmailSender {
     }
   }
 
-  private serialize(dbRecord: {
-    id: number
-    customerEmail: string
-    customerType: 'NORMAL' | 'VIP'
-    items: { name: string; price: number; quantity: number }[]
-    amounts: {
-      subtotal: number | undefined
-      discount: number | undefined
-      tax: number | undefined
-      shipping: number | undefined
-      total: number | undefined
-    }
-    status: string
-    createdAt: string
-    updatedAt: string
-    currency: string
-  }) {
+  private serialize(orderEmailDTO: OrderEmailDTO) {
     // Simular transformación/serialización pesada
-    return JSON.stringify(dbRecord, null, 2)
+    return JSON.stringify(orderEmailDTO, null, 2)
   }
 
   private mapOrderToDto(order: Order) {
@@ -126,41 +111,6 @@ export class EmailSender {
   }
 
   private getCurrentDate() {
-    return this.clock.getCurrentDate()
-  }
-}
-
-
-export class OrderToEmail {
-  private readonly clock: Clock
-
-  constructor(clock: Clock) {
-    this.clock = clock
-  }
-
-  map(order: OrderData): OrderEmailDTO {
-    const dbNow = this.getCurrentDate()
-
-    return {
-      id: order.id!,
-      customerEmail: order.customerEmail!,
-      customerType: order.customerType!,
-      items: order.items,
-      amounts: {
-        subtotal: order.subtotal,
-        discount: order.discount,
-        tax: order.tax,
-        shipping: order.shipping,
-        total: order.total,
-      },
-      status: 'PENDING',
-      createdAt: dbNow.toISOString(),
-      updatedAt: dbNow.toISOString(),
-      currency: 'USD',
-    } as OrderRecordDTO
-  }
-
-  protected getCurrentDate(): Date {
     return this.clock.getCurrentDate()
   }
 }

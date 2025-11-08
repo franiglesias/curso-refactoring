@@ -1,9 +1,10 @@
-import {Clock} from './Clock'
+import {Clock} from '../Clock'
 import {Buffer} from 'node:buffer'
-import {formatMoney, roundMoney} from './long-method'
+import {formatMoney} from '../long-method'
 import {PrintJobIdGenerator} from './PrintJobIdGenerator'
-import {Order, OrderData, PrintOrderDTO} from './order/Order'
-import {MapperFactory} from "./MapperFactory";
+import {Order} from '../order/Order'
+import {MapperFactory} from '../MapperFactory'
+import {PrintOrderDTO} from './PrintOrderDTO'
 
 export class OrderPrinter {
   private readonly clock: Clock
@@ -193,67 +194,3 @@ export class OrderPrinter {
     return this.clock.getCurrentDate()
   }
 }
-
-interface PrintJob {
-  title: string
-  items: { name: string; quantity: number; lineTotal: number; lineTotalFormatted: string }[]
-  subtotal: number
-  discount: number
-  tax: number
-  shipping: number
-  total: number
-  currency: string
-  formatted: {
-    subtotal: string
-    discount: string
-    tax: string
-    shipping: string
-    total: string
-  }
-  metadata: {
-    customerEmail: string
-    createdAt: string
-  }
-}
-
-export class OrderToPrint {
-  private readonly clock: Clock
-
-  constructor(clock: Clock) {
-    this.clock = clock
-  }
-
-  map(order: OrderData): PrintOrderDTO {
-    return {
-      title: 'Resumen del pedido',
-      lines: order.items?.map((i) => ({
-        name: i.name,
-        quantity: i.quantity,
-        lineTotal: roundMoney(i.price * i.quantity),
-        lineTotalFormatted: formatMoney(i.price * i.quantity),
-      })),
-      subtotal: order.subtotal ?? 0,
-      discount: order.discount ?? 0,
-      tax: order.tax ?? 0,
-      shipping: order.shipping ?? 0,
-      total: order.total ?? 0,
-      currency: 'USD',
-      formatted: {
-        subtotal: formatMoney(order.subtotal),
-        discount: order.discount && order.discount > 0 ? `-${formatMoney(order.discount)}` : formatMoney(0),
-        tax: formatMoney(order.tax),
-        shipping: formatMoney(order.shipping),
-        total: formatMoney(order.total),
-      },
-      metadata: {
-        customerEmail: order.customerEmail,
-        createdAt: new Date().toISOString(),
-      },
-    } as unknown as PrintOrderDTO
-  }
-
-  protected getCurrentDate(): Date {
-    return this.clock.getCurrentDate()
-  }
-}
-

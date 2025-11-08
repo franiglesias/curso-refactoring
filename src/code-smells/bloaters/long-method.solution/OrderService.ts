@@ -1,9 +1,9 @@
-import {OrderDatabase} from "./OrderDatabase";
-import {EmailSender} from "./EmailSender";
-import {OrderPrinter} from "./OrderPrinter";
-import {OrderIdProvider} from "./OrderIdProvider";
-import {Order} from "./order/Order";
-import {ValidatedOrder} from "./order/ValidatedOrder";
+import {OrderDatabase} from './persistence/OrderDatabase'
+import {EmailSender} from './email/EmailSender'
+import {OrderPrinter} from './print/OrderPrinter'
+import {OrderIdProvider} from './OrderIdProvider'
+import {Order} from './order/Order'
+import {ValidatedOrder} from './order/ValidatedOrder'
 
 export class OrderService {
   private readonly orderDatabase: OrderDatabase

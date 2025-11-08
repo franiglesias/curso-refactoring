@@ -20,4 +20,3 @@ export function formatMoney(n: number | undefined): string {
   const v = typeof n === 'number' ? n : 0
   return `$${v.toFixed(2)}`
 }
-

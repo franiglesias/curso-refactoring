@@ -3,7 +3,7 @@ import {OrderIdProvider} from '../OrderIdProvider'
 import {ValidatedOrder} from './ValidatedOrder'
 import {ProcessedOrder} from './ProcessedOrder'
 
-import {MapperFactory} from "../MapperFactory";
+import {MapperFactory} from '../MapperFactory'
 
 export class PendingOrder implements Order {
   id: number

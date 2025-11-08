@@ -1,13 +1,13 @@
 import {describe, expect, it, vi} from 'vitest'
 import {ClockStub} from './Clock'
-import {OrderDatabase} from './OrderDatabase'
-import {EmailSender} from './EmailSender'
-import {OrderPrinter} from './OrderPrinter'
-import {PrintJobIdGeneratorStub} from './PrintJobIdGenerator'
+import {OrderDatabase} from './persistence/OrderDatabase'
+import {EmailSender} from './email/EmailSender'
+import {OrderPrinter} from './print/OrderPrinter'
+import {PrintJobIdGeneratorStub} from './print/PrintJobIdGenerator'
 import {OrderIdProviderStub} from './OrderIdProvider'
 import {ItemCollection, Order} from './order/Order'
 import {PendingOrder} from './order/PendingOrder'
-import {OrderService} from "./OrderService";
+import {OrderService} from './OrderService'
 
 function formatConsoleCalls(spy: ReturnType<typeof vi.spyOn>) {
   return spy.mock.calls.map((call) => call.join(' ')).join('\n')
