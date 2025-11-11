@@ -1,0 +1,444 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`long method > Given a NORMAL customer > When the order has 'free shipping' > should process the order 1`] = `
+"[DB] Serializando registro 67234 (517 bytes) para Server=fake.db.local;Database=orders;User=demo;Password=demo
+[DB] Intento 1/3: guardando pedido 67234 con total $155.18
+[DB] Pedido 67234 guardado correctamente
+[AUDIT] Registro: {"type":"ORDER_SAVED","orderId":67234,"actor":"system","at":"2023-05-21T11:35:00.000Z","metadata":{"ip":"127.0.0.1","userAgent":"OrderService/1.0"}}
+[MAIL] Preparando correo (1208 bytes) vía smtp.fake.local:587
+[MAIL] Encolando correo (NORMAL) para customer@example.com
+[MAIL] Intento 1/2: enviando correo a customer@example.com
+[MAIL] Correo enviado a customer@example.com (messageId=msg-67234-1684668900000)
+[PRN] Preparando conexión a impresora Demo Thermal Printer TP-80 (USB/ESC/POS)
+[PRN] Agregando QR con datos: ORDER|customer@example.com|155.18|1684668900000
+[PRN] Vista previa del recibo:
+==========================================
+RESUMEN DEL PEDIDO                        
+5/21/2023, 1:35:00 PM                     
+Cliente: customer@example.com             
+------------------------------------------
+3 x Product 1                       $36.15
+6 x Another                         $92.10
+------------------------------------------
+Subtotal                           $128.25
+Descuento                            $0.00
+Impuestos                           $26.93
+Envío                                $0.00
+...(5 líneas más)
+[PRN] Encolando trabajo prn-1762191762553-125 (855 bytes, prioridad=NORMAL) en Front Desk
+[PRN] Enviando chunk #0 (256 bytes) intento 1/2
+[PRN] Enviando chunk #1 (256 bytes) intento 1/2
+[PRN] Enviando chunk #2 (256 bytes) intento 1/2
+[PRN] Enviando chunk #3 (87 bytes) intento 1/2
+[PRN] Trabajo prn-1762191762553-125 impreso correctamente. Total enviado: 855 bytes"
+`;
+
+exports[`long method > Given a NORMAL customer > When the order has 'invalid price' > should process the order 1`] = `
+"[DB] Serializando registro 67234 (417 bytes) para Server=fake.db.local;Database=orders;User=demo;Password=demo
+[DB] Intento 1/3: guardando pedido 67234 con total $5.00
+[DB] Pedido 67234 guardado correctamente
+[AUDIT] Registro: {"type":"ORDER_SAVED","orderId":67234,"actor":"system","at":"2023-05-21T11:35:00.000Z","metadata":{"ip":"127.0.0.1","userAgent":"OrderService/1.0"}}
+[MAIL] Preparando correo (1103 bytes) vía smtp.fake.local:587
+[MAIL] Encolando correo (NORMAL) para customer@example.com
+[MAIL] Intento 1/2: enviando correo a customer@example.com
+[MAIL] Correo enviado a customer@example.com (messageId=msg-67234-1684668900000)
+[PRN] Preparando conexión a impresora Demo Thermal Printer TP-80 (USB/ESC/POS)
+[PRN] Agregando QR con datos: ORDER|customer@example.com|5|1684668900000
+[PRN] Vista previa del recibo:
+==========================================
+RESUMEN DEL PEDIDO                        
+5/21/2023, 1:35:00 PM                     
+Cliente: customer@example.com             
+------------------------------------------
+2 x Invalid                          $0.00
+------------------------------------------
+Subtotal                             $0.00
+Descuento                            $0.00
+Impuestos                            $0.00
+Envío                                $5.00
+TOTAL                                $5.00
+...(4 líneas más)
+[PRN] Encolando trabajo prn-1762191762553-125 (812 bytes, prioridad=NORMAL) en Front Desk
+[PRN] Enviando chunk #0 (256 bytes) intento 1/2
+[PRN] Enviando chunk #1 (256 bytes) intento 1/2
+[PRN] Enviando chunk #2 (256 bytes) intento 1/2
+[PRN] Enviando chunk #3 (44 bytes) intento 1/2
+[PRN] Trabajo prn-1762191762553-125 impreso correctamente. Total enviado: 812 bytes"
+`;
+
+exports[`long method > Given a NORMAL customer > When the order has 'invalid quantity' > should process the order 1`] = `"Producto inválido en el pedido"`;
+
+exports[`long method > Given a NORMAL customer > When the order has 'no items' > should process the order 1`] = `"El pedido no tiene productos"`;
+
+exports[`long method > Given a NORMAL customer > When the order has 'shipping costs' > should process the order 1`] = `
+"[DB] Serializando registro 67234 (513 bytes) para Server=fake.db.local;Database=orders;User=demo;Password=demo
+[DB] Intento 1/3: guardando pedido 67234 con total $38.15
+[DB] Pedido 67234 guardado correctamente
+[AUDIT] Registro: {"type":"ORDER_SAVED","orderId":67234,"actor":"system","at":"2023-05-21T11:35:00.000Z","metadata":{"ip":"127.0.0.1","userAgent":"OrderService/1.0"}}
+[MAIL] Preparando correo (1201 bytes) vía smtp.fake.local:587
+[MAIL] Encolando correo (NORMAL) para customer@example.com
+[MAIL] Intento 1/2: enviando correo a customer@example.com
+[MAIL] Correo enviado a customer@example.com (messageId=msg-67234-1684668900000)
+[PRN] Preparando conexión a impresora Demo Thermal Printer TP-80 (USB/ESC/POS)
+[PRN] Agregando QR con datos: ORDER|customer@example.com|38.15|1684668900000
+[PRN] Vista previa del recibo:
+==========================================
+RESUMEN DEL PEDIDO                        
+5/21/2023, 1:35:00 PM                     
+Cliente: customer@example.com             
+------------------------------------------
+1 x Product 1                       $12.05
+1 x Another                         $15.35
+------------------------------------------
+Subtotal                            $27.40
+Descuento                            $0.00
+Impuestos                            $5.75
+Envío                                $5.00
+...(5 líneas más)
+[PRN] Encolando trabajo prn-1762191762553-125 (855 bytes, prioridad=NORMAL) en Front Desk
+[PRN] Enviando chunk #0 (256 bytes) intento 1/2
+[PRN] Enviando chunk #1 (256 bytes) intento 1/2
+[PRN] Enviando chunk #2 (256 bytes) intento 1/2
+[PRN] Enviando chunk #3 (87 bytes) intento 1/2
+[PRN] Trabajo prn-1762191762553-125 impreso correctamente. Total enviado: 855 bytes"
+`;
+
+exports[`long method > Given a NORMAL customer > should process the order 1`] = `
+"[DB] Serializando registro 67234 (517 bytes) para Server=fake.db.local;Database=orders;User=demo;Password=demo
+[DB] Intento 1/3: guardando pedido 67234 con total $155.18
+[DB] Pedido 67234 guardado correctamente
+[AUDIT] Registro: {"type":"ORDER_SAVED","orderId":67234,"actor":"system","at":"2023-05-21T11:35:00.000Z","metadata":{"ip":"127.0.0.1","userAgent":"OrderService/1.0"}}
+[MAIL] Preparando correo (1208 bytes) vía smtp.fake.local:587
+[MAIL] Encolando correo (NORMAL) para customer@example.com
+[MAIL] Intento 1/2: enviando correo a customer@example.com
+[MAIL] Correo enviado a customer@example.com (messageId=msg-67234-1684668900000)
+[PRN] Preparando conexión a impresora Demo Thermal Printer TP-80 (USB/ESC/POS)
+[PRN] Agregando QR con datos: ORDER|customer@example.com|155.18|1684668900000
+[PRN] Vista previa del recibo:
+==========================================
+RESUMEN DEL PEDIDO                        
+5/21/2023, 1:35:00 PM                     
+Cliente: customer@example.com             
+------------------------------------------
+3 x Product 1                       $36.15
+6 x Another                         $92.10
+------------------------------------------
+Subtotal                           $128.25
+Descuento                            $0.00
+Impuestos                           $26.93
+Envío                                $0.00
+...(5 líneas más)
+[PRN] Encolando trabajo prn-1762191762553-125 (855 bytes, prioridad=NORMAL) en Front Desk
+[PRN] Enviando chunk #0 (256 bytes) intento 1/2
+[PRN] Enviando chunk #1 (256 bytes) intento 1/2
+[PRN] Enviando chunk #2 (256 bytes) intento 1/2
+[PRN] Enviando chunk #3 (87 bytes) intento 1/2
+[PRN] Trabajo prn-1762191762553-125 impreso correctamente. Total enviado: 855 bytes"
+`;
+
+exports[`long method > Given a NORMAL customer > when the order has shipping costs > should process the order 1`] = `
+"[DB] Serializando registro 67234 (513 bytes) para Server=fake.db.local;Database=orders;User=demo;Password=demo
+[DB] Intento 1/3: guardando pedido 67234 con total $38.15
+[DB] Pedido 67234 guardado correctamente
+[AUDIT] Registro: {"type":"ORDER_SAVED","orderId":67234,"actor":"system","at":"2023-05-21T11:35:00.000Z","metadata":{"ip":"127.0.0.1","userAgent":"OrderService/1.0"}}
+[MAIL] Preparando correo (1201 bytes) vía smtp.fake.local:587
+[MAIL] Encolando correo (NORMAL) para customer@example.com
+[MAIL] Intento 1/2: enviando correo a customer@example.com
+[MAIL] Correo enviado a customer@example.com (messageId=msg-67234-1684668900000)
+[PRN] Preparando conexión a impresora Demo Thermal Printer TP-80 (USB/ESC/POS)
+[PRN] Agregando QR con datos: ORDER|customer@example.com|38.15|1684668900000
+[PRN] Vista previa del recibo:
+==========================================
+RESUMEN DEL PEDIDO                        
+5/21/2023, 1:35:00 PM                     
+Cliente: customer@example.com             
+------------------------------------------
+1 x Product 1                       $12.05
+1 x Another                         $15.35
+------------------------------------------
+Subtotal                            $27.40
+Descuento                            $0.00
+Impuestos                            $5.75
+Envío                                $5.00
+...(5 líneas más)
+[PRN] Encolando trabajo prn-1762191762553-125 (855 bytes, prioridad=NORMAL) en Front Desk
+[PRN] Enviando chunk #0 (256 bytes) intento 1/2
+[PRN] Enviando chunk #1 (256 bytes) intento 1/2
+[PRN] Enviando chunk #2 (256 bytes) intento 1/2
+[PRN] Enviando chunk #3 (87 bytes) intento 1/2
+[PRN] Trabajo prn-1762191762553-125 impreso correctamente. Total enviado: 855 bytes"
+`;
+
+exports[`long method > Given a NORMAL customer > when the order has shipping costs > should process the order 2`] = `
+"[DB] Serializando registro 67234 (517 bytes) para Server=fake.db.local;Database=orders;User=demo;Password=demo
+[DB] Intento 1/3: guardando pedido 67234 con total $155.18
+[DB] Pedido 67234 guardado correctamente
+[AUDIT] Registro: {"type":"ORDER_SAVED","orderId":67234,"actor":"system","at":"2023-05-21T11:35:00.000Z","metadata":{"ip":"127.0.0.1","userAgent":"OrderService/1.0"}}
+[MAIL] Preparando correo (1208 bytes) vía smtp.fake.local:587
+[MAIL] Encolando correo (NORMAL) para customer@example.com
+[MAIL] Intento 1/2: enviando correo a customer@example.com
+[MAIL] Correo enviado a customer@example.com (messageId=msg-67234-1684668900000)
+[PRN] Preparando conexión a impresora Demo Thermal Printer TP-80 (USB/ESC/POS)
+[PRN] Agregando QR con datos: ORDER|customer@example.com|155.18|1684668900000
+[PRN] Vista previa del recibo:
+==========================================
+RESUMEN DEL PEDIDO                        
+5/21/2023, 1:35:00 PM                     
+Cliente: customer@example.com             
+------------------------------------------
+3 x Product 1                       $36.15
+6 x Another                         $92.10
+------------------------------------------
+Subtotal                           $128.25
+Descuento                            $0.00
+Impuestos                           $26.93
+Envío                                $0.00
+...(5 líneas más)
+[PRN] Encolando trabajo prn-1762191762553-125 (855 bytes, prioridad=NORMAL) en Front Desk
+[PRN] Enviando chunk #0 (256 bytes) intento 1/2
+[PRN] Enviando chunk #1 (256 bytes) intento 1/2
+[PRN] Enviando chunk #2 (256 bytes) intento 1/2
+[PRN] Enviando chunk #3 (87 bytes) intento 1/2
+[PRN] Trabajo prn-1762191762553-125 impreso correctamente. Total enviado: 855 bytes"
+`;
+
+exports[`long method > Given a VIP customer > When the order has 'free shipping' > should process the order 1`] = `
+"Descuento VIP aplicado
+[DB] Serializando registro 67234 (518 bytes) para Server=fake.db.local;Database=orders;User=demo;Password=demo
+[DB] Intento 1/3: guardando pedido 67234 con total $139.66
+[DB] Pedido 67234 guardado correctamente
+[AUDIT] Registro: {"type":"ORDER_SAVED","orderId":67234,"actor":"system","at":"2023-05-21T11:35:00.000Z","metadata":{"ip":"127.0.0.1","userAgent":"OrderService/1.0"}}
+[MAIL] Preparando correo (1211 bytes) vía smtp.fake.local:587
+[MAIL] Encolando correo (HIGH) para customer@example.com
+[MAIL] Intento 1/2: enviando correo a customer@example.com
+[MAIL] Correo enviado a customer@example.com (messageId=msg-67234-1684668900000)
+[PRN] Preparando conexión a impresora Demo Thermal Printer TP-80 (USB/ESC/POS)
+[PRN] Agregando QR con datos: ORDER|customer@example.com|139.66|1684668900000
+[PRN] Vista previa del recibo:
+==========================================
+RESUMEN DEL PEDIDO                        
+5/21/2023, 1:35:00 PM                     
+Cliente: customer@example.com             
+------------------------------------------
+3 x Product 1                       $36.15
+6 x Another                         $92.10
+------------------------------------------
+Subtotal                           $128.25
+Descuento                          -$12.83
+Impuestos                           $24.24
+Envío                                $0.00
+...(5 líneas más)
+[PRN] Encolando trabajo prn-1762191762553-125 (855 bytes, prioridad=HIGH) en Front Desk
+[PRN] Enviando chunk #0 (256 bytes) intento 1/2
+[PRN] Enviando chunk #1 (256 bytes) intento 1/2
+[PRN] Enviando chunk #2 (256 bytes) intento 1/2
+[PRN] Enviando chunk #3 (87 bytes) intento 1/2
+[PRN] Trabajo prn-1762191762553-125 impreso correctamente. Total enviado: 855 bytes"
+`;
+
+exports[`long method > Given a VIP customer > When the order has 'invalid price' > should process the order 1`] = `
+"Descuento VIP aplicado
+[DB] Serializando registro 67234 (414 bytes) para Server=fake.db.local;Database=orders;User=demo;Password=demo
+[DB] Intento 1/3: guardando pedido 67234 con total $5.00
+[DB] Pedido 67234 guardado correctamente
+[AUDIT] Registro: {"type":"ORDER_SAVED","orderId":67234,"actor":"system","at":"2023-05-21T11:35:00.000Z","metadata":{"ip":"127.0.0.1","userAgent":"OrderService/1.0"}}
+[MAIL] Preparando correo (1100 bytes) vía smtp.fake.local:587
+[MAIL] Encolando correo (HIGH) para customer@example.com
+[MAIL] Intento 1/2: enviando correo a customer@example.com
+[MAIL] Correo enviado a customer@example.com (messageId=msg-67234-1684668900000)
+[PRN] Preparando conexión a impresora Demo Thermal Printer TP-80 (USB/ESC/POS)
+[PRN] Agregando QR con datos: ORDER|customer@example.com|5|1684668900000
+[PRN] Vista previa del recibo:
+==========================================
+RESUMEN DEL PEDIDO                        
+5/21/2023, 1:35:00 PM                     
+Cliente: customer@example.com             
+------------------------------------------
+2 x Invalid                          $0.00
+------------------------------------------
+Subtotal                             $0.00
+Descuento                            $0.00
+Impuestos                            $0.00
+Envío                                $5.00
+TOTAL                                $5.00
+...(4 líneas más)
+[PRN] Encolando trabajo prn-1762191762553-125 (812 bytes, prioridad=HIGH) en Front Desk
+[PRN] Enviando chunk #0 (256 bytes) intento 1/2
+[PRN] Enviando chunk #1 (256 bytes) intento 1/2
+[PRN] Enviando chunk #2 (256 bytes) intento 1/2
+[PRN] Enviando chunk #3 (44 bytes) intento 1/2
+[PRN] Trabajo prn-1762191762553-125 impreso correctamente. Total enviado: 812 bytes"
+`;
+
+exports[`long method > Given a VIP customer > When the order has 'invalid quantity' > should process the order 1`] = `"Producto inválido en el pedido"`;
+
+exports[`long method > Given a VIP customer > When the order has 'no items' > should process the order 1`] = `"El pedido no tiene productos"`;
+
+exports[`long method > Given a VIP customer > When the order has 'shipping costs' > should process the order 1`] = `
+"Descuento VIP aplicado
+[DB] Serializando registro 67234 (513 bytes) para Server=fake.db.local;Database=orders;User=demo;Password=demo
+[DB] Intento 1/3: guardando pedido 67234 con total $34.84
+[DB] Pedido 67234 guardado correctamente
+[AUDIT] Registro: {"type":"ORDER_SAVED","orderId":67234,"actor":"system","at":"2023-05-21T11:35:00.000Z","metadata":{"ip":"127.0.0.1","userAgent":"OrderService/1.0"}}
+[MAIL] Preparando correo (1202 bytes) vía smtp.fake.local:587
+[MAIL] Encolando correo (HIGH) para customer@example.com
+[MAIL] Intento 1/2: enviando correo a customer@example.com
+[MAIL] Correo enviado a customer@example.com (messageId=msg-67234-1684668900000)
+[PRN] Preparando conexión a impresora Demo Thermal Printer TP-80 (USB/ESC/POS)
+[PRN] Agregando QR con datos: ORDER|customer@example.com|34.84|1684668900000
+[PRN] Vista previa del recibo:
+==========================================
+RESUMEN DEL PEDIDO                        
+5/21/2023, 1:35:00 PM                     
+Cliente: customer@example.com             
+------------------------------------------
+1 x Product 1                       $12.05
+1 x Another                         $15.35
+------------------------------------------
+Subtotal                            $27.40
+Descuento                           -$2.74
+Impuestos                            $5.18
+Envío                                $5.00
+...(5 líneas más)
+[PRN] Encolando trabajo prn-1762191762553-125 (855 bytes, prioridad=HIGH) en Front Desk
+[PRN] Enviando chunk #0 (256 bytes) intento 1/2
+[PRN] Enviando chunk #1 (256 bytes) intento 1/2
+[PRN] Enviando chunk #2 (256 bytes) intento 1/2
+[PRN] Enviando chunk #3 (87 bytes) intento 1/2
+[PRN] Trabajo prn-1762191762553-125 impreso correctamente. Total enviado: 855 bytes"
+`;
+
+exports[`long method > Given a VIP customer > should process the order 1`] = `
+"Descuento VIP aplicado
+[DB] Serializando registro 67234 (518 bytes) para Server=fake.db.local;Database=orders;User=demo;Password=demo
+[DB] Intento 1/3: guardando pedido 67234 con total $139.66
+[DB] Pedido 67234 guardado correctamente
+[AUDIT] Registro: {"type":"ORDER_SAVED","orderId":67234,"actor":"system","at":"2023-05-21T11:35:00.000Z","metadata":{"ip":"127.0.0.1","userAgent":"OrderService/1.0"}}
+[MAIL] Preparando correo (1211 bytes) vía smtp.fake.local:587
+[MAIL] Encolando correo (HIGH) para customer@example.com
+[MAIL] Intento 1/2: enviando correo a customer@example.com
+[MAIL] Correo enviado a customer@example.com (messageId=msg-67234-1684668900000)
+[PRN] Preparando conexión a impresora Demo Thermal Printer TP-80 (USB/ESC/POS)
+[PRN] Agregando QR con datos: ORDER|customer@example.com|139.66|1684668900000
+[PRN] Vista previa del recibo:
+==========================================
+RESUMEN DEL PEDIDO                        
+5/21/2023, 1:35:00 PM                     
+Cliente: customer@example.com             
+------------------------------------------
+3 x Product 1                       $36.15
+6 x Another                         $92.10
+------------------------------------------
+Subtotal                           $128.25
+Descuento                          -$12.83
+Impuestos                           $24.24
+Envío                                $0.00
+...(5 líneas más)
+[PRN] Encolando trabajo prn-1762191762553-125 (855 bytes, prioridad=HIGH) en Front Desk
+[PRN] Enviando chunk #0 (256 bytes) intento 1/2
+[PRN] Enviando chunk #1 (256 bytes) intento 1/2
+[PRN] Enviando chunk #2 (256 bytes) intento 1/2
+[PRN] Enviando chunk #3 (87 bytes) intento 1/2
+[PRN] Trabajo prn-1762191762553-125 impreso correctamente. Total enviado: 855 bytes"
+`;
+
+exports[`long method > Given a VIP customer > when the order has shipping costs > should process the order 1`] = `
+"Descuento VIP aplicado
+[DB] Serializando registro 67234 (513 bytes) para Server=fake.db.local;Database=orders;User=demo;Password=demo
+[DB] Intento 1/3: guardando pedido 67234 con total $34.84
+[DB] Pedido 67234 guardado correctamente
+[AUDIT] Registro: {"type":"ORDER_SAVED","orderId":67234,"actor":"system","at":"2023-05-21T11:35:00.000Z","metadata":{"ip":"127.0.0.1","userAgent":"OrderService/1.0"}}
+[MAIL] Preparando correo (1202 bytes) vía smtp.fake.local:587
+[MAIL] Encolando correo (HIGH) para customer@example.com
+[MAIL] Intento 1/2: enviando correo a customer@example.com
+[MAIL] Correo enviado a customer@example.com (messageId=msg-67234-1684668900000)
+[PRN] Preparando conexión a impresora Demo Thermal Printer TP-80 (USB/ESC/POS)
+[PRN] Agregando QR con datos: ORDER|customer@example.com|34.84|1684668900000
+[PRN] Vista previa del recibo:
+==========================================
+RESUMEN DEL PEDIDO                        
+5/21/2023, 1:35:00 PM                     
+Cliente: customer@example.com             
+------------------------------------------
+1 x Product 1                       $12.05
+1 x Another                         $15.35
+------------------------------------------
+Subtotal                            $27.40
+Descuento                           -$2.74
+Impuestos                            $5.18
+Envío                                $5.00
+...(5 líneas más)
+[PRN] Encolando trabajo prn-1762191762553-125 (855 bytes, prioridad=HIGH) en Front Desk
+[PRN] Enviando chunk #0 (256 bytes) intento 1/2
+[PRN] Enviando chunk #1 (256 bytes) intento 1/2
+[PRN] Enviando chunk #2 (256 bytes) intento 1/2
+[PRN] Enviando chunk #3 (87 bytes) intento 1/2
+[PRN] Trabajo prn-1762191762553-125 impreso correctamente. Total enviado: 855 bytes"
+`;
+
+exports[`long method > Given a VIP customer > when the order has shipping costs > should process the order 2`] = `
+"Descuento VIP aplicado
+[DB] Serializando registro 67234 (518 bytes) para Server=fake.db.local;Database=orders;User=demo;Password=demo
+[DB] Intento 1/3: guardando pedido 67234 con total $139.66
+[DB] Pedido 67234 guardado correctamente
+[AUDIT] Registro: {"type":"ORDER_SAVED","orderId":67234,"actor":"system","at":"2023-05-21T11:35:00.000Z","metadata":{"ip":"127.0.0.1","userAgent":"OrderService/1.0"}}
+[MAIL] Preparando correo (1211 bytes) vía smtp.fake.local:587
+[MAIL] Encolando correo (HIGH) para customer@example.com
+[MAIL] Intento 1/2: enviando correo a customer@example.com
+[MAIL] Correo enviado a customer@example.com (messageId=msg-67234-1684668900000)
+[PRN] Preparando conexión a impresora Demo Thermal Printer TP-80 (USB/ESC/POS)
+[PRN] Agregando QR con datos: ORDER|customer@example.com|139.66|1684668900000
+[PRN] Vista previa del recibo:
+==========================================
+RESUMEN DEL PEDIDO                        
+5/21/2023, 1:35:00 PM                     
+Cliente: customer@example.com             
+------------------------------------------
+3 x Product 1                       $36.15
+6 x Another                         $92.10
+------------------------------------------
+Subtotal                           $128.25
+Descuento                          -$12.83
+Impuestos                           $24.24
+Envío                                $0.00
+...(5 líneas más)
+[PRN] Encolando trabajo prn-1762191762553-125 (855 bytes, prioridad=HIGH) en Front Desk
+[PRN] Enviando chunk #0 (256 bytes) intento 1/2
+[PRN] Enviando chunk #1 (256 bytes) intento 1/2
+[PRN] Enviando chunk #2 (256 bytes) intento 1/2
+[PRN] Enviando chunk #3 (87 bytes) intento 1/2
+[PRN] Trabajo prn-1762191762553-125 impreso correctamente. Total enviado: 855 bytes"
+`;
+
+exports[`long method > simple order with NORMAL customer 1`] = `
+"[DB] Serializando registro 67234 (517 bytes) para Server=fake.db.local;Database=orders;User=demo;Password=demo
+[DB] Intento 1/3: guardando pedido 67234 con total $155.18
+[DB] Pedido 67234 guardado correctamente
+[AUDIT] Registro: {"type":"ORDER_SAVED","orderId":67234,"actor":"system","at":"2023-05-21T11:35:00.000Z","metadata":{"ip":"127.0.0.1","userAgent":"OrderService/1.0"}}
+[MAIL] Preparando correo (1208 bytes) vía smtp.fake.local:587
+[MAIL] Encolando correo (NORMAL) para customer@example.com
+[MAIL] Intento 1/2: enviando correo a customer@example.com
+[MAIL] Correo enviado a customer@example.com (messageId=msg-67234-1684668900000)
+[PRN] Preparando conexión a impresora Demo Thermal Printer TP-80 (USB/ESC/POS)
+[PRN] Agregando QR con datos: ORDER|customer@example.com|155.18|1684668900000
+[PRN] Vista previa del recibo:
+==========================================
+RESUMEN DEL PEDIDO                        
+5/21/2023, 1:35:00 PM                     
+Cliente: customer@example.com             
+------------------------------------------
+3 x Product 1                       $36.15
+6 x Another                         $92.10
+------------------------------------------
+Subtotal                           $128.25
+Descuento                            $0.00
+Impuestos                           $26.93
+Envío                                $0.00
+...(5 líneas más)
+[PRN] Encolando trabajo prn-1762191762553-125 (855 bytes, prioridad=NORMAL) en Front Desk
+[PRN] Enviando chunk #0 (256 bytes) intento 1/2
+[PRN] Enviando chunk #1 (256 bytes) intento 1/2
+[PRN] Enviando chunk #2 (256 bytes) intento 1/2
+[PRN] Enviando chunk #3 (87 bytes) intento 1/2
+[PRN] Trabajo prn-1762191762553-125 impreso correctamente. Total enviado: 855 bytes"
+`;

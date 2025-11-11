@@ -1,0 +1,35 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Long Parameter List > Generates a report 1`] = `
+"Generando reporte: Ventas Q1
+Desde Wed Jan 01 2025 hasta Mon Mar 31 2025
+Autor: Pat Smith (pat@example.com)
+Incluyendo gráficos...
+Reporte generado exitosamente."
+`;
+
+exports[`Long Parameter List > Generates a report using ReportContent object 1`] = `
+"Ajustando página a A5...
+Generando reporte: Updated Report
+Desde Tue Apr 01 2025 hasta Tue Jul 01 2025
+Autor: Jane Doe (jane@example.com)
+Incluyendo gráficos...
+Reporte generado exitosamente."
+`;
+
+exports[`Long Parameter List > Generates a report with Value Objects 1`] = `
+"Generando reporte: Ventas Q1
+Desde Wed Jan 01 2025 hasta Mon Mar 31 2025
+Autor: Pat Smith (pat@example.com)
+Incluyendo gráficos...
+Reporte generado exitosamente."
+`;
+
+exports[`Long Parameter List > Generates a report with custom page Size 1`] = `
+"Ajustando página a A5...
+Generando reporte: Ventas Q1
+Desde Wed Jan 01 2025 hasta Mon Mar 31 2025
+Autor: Pat Smith (pat@example.com)
+Incluyendo gráficos...
+Reporte generado exitosamente."
+`;

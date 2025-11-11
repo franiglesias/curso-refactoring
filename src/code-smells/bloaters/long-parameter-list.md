@@ -1,14 +1,12 @@
-// Code smell: Long Parameter List [Lista de parámetros larga].
-// Demasiados parámetros separados hacen las llamadas difíciles de leer
-// y propensas a errores.
-// Esto podría reemplazarse con un objeto de parámetros o un builder.
+# Long Parameter List
 
-// Ejercicio: Añade dos opciones más (p. ej., locale y pageSize) al reporte.
+## Definición
 
-// Tendrás que encadenar más argumentos a través de cada punto
-// de llamada, aumentando la probabilidad de errores y
-// dificultando cambios futuros.
+Una función recibe más de tres o cuatro parámetros.
 
+## Ejemplo
+
+```typescript
 class ReportGenerator {
   generateReport(
     title: string,
@@ -40,3 +38,13 @@ export function demoLongParameterList(): void {
     'pat@example.com',
   )
 }
+```
+
+## Ejercicio
+
+Añade dos opciones más (p. ej., locale y pageSize) al reporte.
+
+## Problemas que encontrarás
+
+Con más de tres parámetros es difícil recordar con exactitud cuáles son, el orden o el tipo de cada
+uno. Añadir parámetros no hace más que aumentar la dificultad de uso y mantenimiento.
